@@ -1,0 +1,11 @@
+This is a coordination file to track what was changed.
+
+Course cards updated on index.html and practice.html:
+- EAP 100: Future Focused (Fall 2026, current)
+- EAP 100: (Un)Sustainability (2018-2025, presentation skills)
+- EAP 101: Systems Thinking (2021-2025, seminar skills)
+- EAP 101: The History of Rock and Roll (2020, 2026, seminar skills)
+
+All cards now show EAP 100 or EAP 101 course codes and correct date ranges.
+Student numbers removed from practice page.
+This file can be deleted.
