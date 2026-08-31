@@ -32,6 +32,9 @@ a{color:inherit}
 @keyframes ping{0%{box-shadow:0 0 0 0 rgba(226,96,27,.5)}70%{box-shadow:0 0 0 11px rgba(226,96,27,0)}100%{box-shadow:0 0 0 0 rgba(226,96,27,0)}}
 @media(max-width:780px){.rail nav{display:none}}
 .pg{padding:clamp(64px,10vw,120px) 0 clamp(40px,5vw,64px)}
+.pg-top{display:flex;align-items:flex-start;gap:clamp(28px,4vw,48px);flex-wrap:wrap}
+.pg-photo{width:clamp(160px,20vw,240px);height:auto;aspect-ratio:3/4;object-fit:cover;object-position:center 20%;border:3px solid var(--ink);box-shadow:4px 6px 0 rgba(23,19,15,.22);flex-shrink:0}
+@media(max-width:600px){.pg-top{flex-direction:column}.pg-photo{width:180px}}
 .pg h1{margin:16px 0 0;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(42px,8vw,96px);letter-spacing:-.04em;line-height:.92}
 .pg .sub{margin-top:22px;max-width:52ch;font-size:clamp(18px,2vw,22px);line-height:1.5;color:var(--ink-soft)}
 section{padding:clamp(56px,8vw,100px) 0}
@@ -80,6 +83,9 @@ section{padding:clamp(56px,8vw,100px) 0}
 footer{background:var(--ink);color:var(--bone);padding:clamp(40px,6vw,64px) 0 32px}
 footer .mono{color:rgba(243,237,225,.78)}
 .foot-end{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
+.links{display:flex;flex-wrap:wrap;gap:11px;margin-bottom:clamp(28px,4vw,40px)}
+.links a{display:inline-flex;align-items:center;gap:9px;text-decoration:none;padding:10px 18px;border:1.5px solid rgba(243,237,225,.45);color:var(--bone);font-family:"Sometype Mono",ui-monospace,monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;transition:transform .16s ease,background .16s ease,border-color .16s ease}
+.links a:hover{transform:translateY(-2px);background:var(--amber);border-color:var(--amber);color:#fff}
 .rev{opacity:0;transform:translateY(16px);transition:opacity .62s ease,transform .62s cubic-bezier(.2,.7,.3,1)}
 .rev.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;transition:none}.lamp3,.dot{animation:none}html{scroll-behavior:auto}}
@@ -95,7 +101,7 @@ footer .mono{color:rgba(243,237,225,.78)}
     <a class="who" href="index.html">Katherine Tosi</a>
     <nav class="mono">
       <a href="practice.html">Practice</a>
-      <a href="index.html#marks">Marks</a>
+      <a href="marks.html">Marks</a>
       <a href="index.html#teaching">Teaching</a>
       <a href="index.html#credentials">Credentials</a>
       <a href="index.html#contact">Contact</a>
@@ -107,8 +113,13 @@ footer .mono{color:rgba(243,237,225,.78)}
 <section class="pg">
   <div class="wrap">
     <span class="mono" style="color:var(--ink-soft)">How I teach and why</span>
-    <h1>The Practice</h1>
-    <p class="sub">I teach English for Academic Purposes at NYU Shanghai. But the real work is building classrooms where first-year students from seventy countries learn to think out loud, argue with evidence, and trust that the room will hold them while they try.</p>
+    <div class="pg-top">
+      <div>
+        <h1>The Practice</h1>
+        <p class="sub">I teach English for Academic Purposes at NYU Shanghai. But the real work is building classrooms where first-year students from seventy countries learn to think out loud, argue with evidence, and trust that the room will hold them while they try.</p>
+      </div>
+      <img class="pg-photo" src="photo.JPG" alt="Katherine Tosi" />
+    </div>
   </div>
 </section>
 
@@ -123,18 +134,9 @@ footer .mono{color:rgba(243,237,225,.78)}
       <p>I integrate digital technologies, interdisciplinary inquiry, and experiential learning into every course. Assignments build critical thinking, communication, collaboration, digital literacy, adaptability, and cross-cultural competence. My pedagogy has a name: <strong>Students as Partners</strong>.</p>
     </div>
     <div class="principles rev">
-      <div class="prin">
-        <h3>Respect</h3>
-        <p>Every student arrives with a story I cannot see. My job is to figure out their present status and cook with whatever is on hand.</p>
-      </div>
-      <div class="prin">
-        <h3>Reciprocity</h3>
-        <p>Students co-create syllabi, review each other's work, negotiate roles in team projects, and evaluate their own learning using structured DEIP reflections.</p>
-      </div>
-      <div class="prin">
-        <h3>Shared responsibility</h3>
-        <p>Learning is not something I do to students. It is something we build together, from the first day's syllabus discussion to the final portfolio showcase.</p>
-      </div>
+      <div class="prin"><h3>Respect</h3><p>Every student arrives with a story I cannot see. My job is to figure out their present status and cook with whatever is on hand.</p></div>
+      <div class="prin"><h3>Reciprocity</h3><p>Students co-create syllabi, review each other's work, negotiate roles in team projects, and evaluate their own learning using structured DEIP reflections.</p></div>
+      <div class="prin"><h3>Shared responsibility</h3><p>Learning is not something I do to students. It is something we build together, from the first day's syllabus discussion to the final portfolio showcase.</p></div>
     </div>
   </div>
 </section>
@@ -161,7 +163,6 @@ footer .mono{color:rgba(243,237,225,.78)}
   <div class="wrap">
     <blockquote>&ldquo;Students were positioned as policy thinkers and collaborators rather than passive learners. Kat created a learning environment that balanced support with intellectual challenge. I was reminded of how impactful teaching can be when this challenge is tied to real-world issues that stretch students&rsquo; academic, linguistic and disciplinary boundaries.&rdquo;</blockquote>
     <p class="attr"><b>Dr. Steve Iams</b>, Assistant Dean for Academic Affairs, NYU Shanghai &middot; Observation letter, January 2026</p>
-
     <blockquote>&ldquo;A highly interactive, student-centered lesson. One of the stand-out elements was the positive atmosphere in which it took place. Students clearly felt supported and included. Respect for you as an instructor was obvious.&rdquo;</blockquote>
     <p class="attr"><b>Catherine Journeaux</b>, EAP Faculty &middot; Classroom observation, December 2024</p>
   </div>
@@ -170,34 +171,12 @@ footer .mono{color:rgba(243,237,225,.78)}
 <section id="courses">
   <div class="wrap">
     <div class="sec-head rev"><span class="mono idx">03</span>&ensp;<h2>The courses</h2></div>
-    <div class="prose rev">
-      <p>I have designed four interdisciplinary first-year courses at NYU Shanghai. Each uses a genuinely difficult question as the vehicle for academic English: speaking, listening, source work, reflection, and the confidence to argue in a second language.</p>
-    </div>
+    <div class="prose rev"><p>I have designed four interdisciplinary first-year courses at NYU Shanghai. Each uses a genuinely difficult question as the vehicle for academic English: speaking, listening, source work, reflection, and the confidence to argue in a second language.</p></div>
     <div class="cd">
-      <div class="cd-item live rev">
-        <span class="mono">Fall 2026 &middot; Current</span>
-        <h3>Future Focused: The Future of Work</h3>
-        <p><strong>Big question:</strong> What will work look like in the future, and how can I prepare for it?</p>
-        <p>Five units: Understanding Work, Technology and the Changing Workplace, The Future Workplace, Ethics and Citizenship in the Age of AI, Communication Skills for the Future. Integrated Career Development Center partnership with four visits, resume drafting, career fair preparation, and a final portfolio showcase. All original course materials (no textbook). Student Workbook with ACAPS source evaluation and Cornell note frameworks.</p>
-        <p><strong>Assessments:</strong> Two listening exams (20% each), informative presentation (20%), persuasive speech (20%), final portfolio with student showcase (10%), participation (10%).</p>
-      </div>
-      <div class="cd-item rev">
-        <span class="mono">2024 &ndash; 2025 &middot; 38 students</span>
-        <h3>(Un)Sustainability</h3>
-        <p><strong>Big question:</strong> What does sustainable development look like, and what is your role in it?</p>
-        <p>Students completed 4&ndash;5 hours of community volunteering, ran informative and persuasive SDG campaign presentations, wrote weekly DEIP reflective journals, used the MIT En-ROADS climate simulator in role-playing exercises, and presented at an end-of-semester poster show. Direct democracy voting systems created by students were shared with student government.</p>
-      </div>
-      <div class="cd-item rev">
-        <span class="mono">Previous &middot; 20 students</span>
-        <h3>Systems Thinking</h3>
-        <p><strong>Capstone:</strong> A 30-minute research interview with someone the student does not know, synthesized into a 15-minute video presentation using primary and secondary sources.</p>
-        <p>Weekly objectives included mapping causal loops, analyzing the Iceberg Model, and surfacing assumptions on controversial issues. Peer review and student-led presentations were core components.</p>
-      </div>
-      <div class="cd-item rev">
-        <span class="mono">Previous</span>
-        <h3>The History of Rock and Roll</h3>
-        <p>Cultural history as a listening and argument course. Proof that academic rigour and genuine delight are not opposites.</p>
-      </div>
+      <div class="cd-item live rev"><span class="mono">Fall 2026 &middot; Current</span><h3>Future Focused: The Future of Work</h3><p><strong>Big question:</strong> What will work look like in the future, and how can I prepare for it?</p><p>Five units: Understanding Work, Technology and the Changing Workplace, The Future Workplace, Ethics and Citizenship in the Age of AI, Communication Skills for the Future. Integrated Career Development Center partnership with four visits, resume drafting, career fair preparation, and a final portfolio showcase. All original course materials (no textbook). Student Workbook with ACAPS source evaluation and Cornell note frameworks.</p><p><strong>Assessments:</strong> Two listening exams (20% each), informative presentation (20%), persuasive speech (20%), final portfolio with student showcase (10%), participation (10%).</p></div>
+      <div class="cd-item rev"><span class="mono">2024 &ndash; 2025 &middot; 38 students</span><h3>(Un)Sustainability</h3><p><strong>Big question:</strong> What does sustainable development look like, and what is your role in it?</p><p>Students completed 4&ndash;5 hours of community volunteering, ran informative and persuasive SDG campaign presentations, wrote weekly DEIP reflective journals, used the MIT En-ROADS climate simulator in role-playing exercises, and presented at an end-of-semester poster show. Direct democracy voting systems created by students were shared with student government.</p></div>
+      <div class="cd-item rev"><span class="mono">Previous &middot; 20 students</span><h3>Systems Thinking</h3><p><strong>Capstone:</strong> A 30-minute research interview with someone the student does not know, synthesized into a 15-minute video presentation using primary and secondary sources.</p><p>Weekly objectives included mapping causal loops, analyzing the Iceberg Model, and surfacing assumptions on controversial issues. Peer review and student-led presentations were core components.</p></div>
+      <div class="cd-item rev"><span class="mono">Previous</span><h3>The History of Rock and Roll</h3><p>Cultural history as a listening and argument course. Proof that academic rigour and genuine delight are not opposites.</p></div>
     </div>
   </div>
 </section>
@@ -208,24 +187,8 @@ footer .mono{color:rgba(243,237,225,.78)}
   <div class="wrap">
     <div class="sec-head rev"><span class="mono idx">04</span>&ensp;<h2>Skills students develop</h2></div>
     <div class="ev-grid rev">
-      <div class="ev">
-        <span class="mono">Thinking &amp; Learning</span>
-        <ul>
-          <li>Self-directed learning and metacognition</li>
-          <li>Critical thinking and analysis</li>
-          <li>Reflective practice and goal setting</li>
-          <li>Problem-solving and adaptability</li>
-        </ul>
-      </div>
-      <div class="ev">
-        <span class="mono">Communication &amp; Collaboration</span>
-        <ul>
-          <li>Academic writing and oral presentation</li>
-          <li>Collaboration and teamwork</li>
-          <li>Digital literacy and research</li>
-          <li>Social responsibility and global awareness</li>
-        </ul>
-      </div>
+      <div class="ev"><span class="mono">Thinking &amp; Learning</span><ul><li>Self-directed learning and metacognition</li><li>Critical thinking and analysis</li><li>Reflective practice and goal setting</li><li>Problem-solving and adaptability</li></ul></div>
+      <div class="ev"><span class="mono">Communication &amp; Collaboration</span><ul><li>Academic writing and oral presentation</li><li>Collaboration and teamwork</li><li>Digital literacy and research</li><li>Social responsibility and global awareness</li></ul></div>
     </div>
   </div>
 </section>
@@ -253,6 +216,11 @@ footer .mono{color:rgba(243,237,225,.78)}
 
 <footer>
   <div class="wrap">
+    <div class="links">
+      <a href="mailto:kat@katswindow.net">kat@katswindow.net</a>
+      <a href="https://www.linkedin.com/in/katherine-kat-tosi-75126347" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
+    </div>
     <div class="foot-end mono">
       <span>Katherine Tosi &middot; Shanghai, China</span>
       <span>Senior education leader &middot; Available July 2027</span>
