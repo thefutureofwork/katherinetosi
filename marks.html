@@ -52,7 +52,8 @@ section{padding:clamp(56px,8vw,100px) 0}
 .stop .yr{color:var(--amber-text)}
 .stop h3{margin:8px 0 4px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:clamp(21px,2.8vw,30px);letter-spacing:-.025em;line-height:1.14}
 .stop .pl{color:var(--ink-soft);font-size:16.5px}
-.stop .ctx{margin-top:6px;font-size:14px;color:var(--ink-soft);font-style:italic;max-width:60ch}
+.stop .ctx{margin-top:6px;font-size:14.5px;color:var(--ink-soft);font-style:italic;max-width:60ch}
+.stop .why{margin-top:10px;font-size:15.5px;line-height:1.5;max-width:60ch;color:var(--amber-text);font-style:italic}
 .stop .desc{margin-top:12px;font-size:16.5px;line-height:1.58;max-width:64ch;color:var(--ink-soft)}
 .stop .desc strong{color:var(--ink);font-weight:600}
 .stop .wins{margin:14px 0 0;padding:0 0 0 20px;list-style:disc}
@@ -76,6 +77,9 @@ section{padding:clamp(56px,8vw,100px) 0}
 footer{background:var(--ink);color:var(--bone);padding:clamp(40px,6vw,64px) 0 32px}
 footer .mono{color:rgba(243,237,225,.78)}
 .foot-end{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
+.links{display:flex;flex-wrap:wrap;gap:11px;margin-bottom:clamp(28px,4vw,40px)}
+.links a{display:inline-flex;align-items:center;gap:9px;text-decoration:none;padding:10px 18px;border:1.5px solid rgba(243,237,225,.45);color:var(--bone);font-family:"Sometype Mono",ui-monospace,monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;transition:transform .16s ease,background .16s ease,border-color .16s ease}
+.links a:hover{transform:translateY(-2px);background:var(--amber);border-color:var(--amber);color:#fff}
 .rev{opacity:0;transform:translateY(16px);transition:opacity .62s ease,transform .62s cubic-bezier(.2,.7,.3,1)}
 .rev.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;transition:none}.lamp4,.dot{animation:none}.stop::before{transform:scaleX(1);transition:none}html{scroll-behavior:auto}}
@@ -125,43 +129,51 @@ footer .mono{color:rgba(243,237,225,.78)}
         <div class="mono yr">1992 &mdash; 1996</div>
         <h3>German Teacher, Grades 7&ndash;12</h3>
         <div class="pl">Springfield High School &middot; Vermont, USA</div>
-        <div class="desc">First teaching position. Secondary German across all year groups in a small rural New England school. Student-taught in the same district with two very different populations: a program for the county's most challenging students (behavior graded 80% on not being violent) and Vietnamese refugee children who arrived speaking zero English. That dual placement is where the interest in SEN, EAL, and student welfare began.</div>
+        <div class="ctx">Small rural public school in southern Vermont. The kind of place where one teacher covers every year group.</div>
+        <div class="desc">Four years teaching secondary German, using a degree minor and genuine fluency to bring a foreign language alive in a community that had very little international exposure. Student-taught in the same district with two very different populations: a program for the county&rsquo;s most challenging students (behavior graded 80% on not being violent) and <strong>Vietnamese refugee children who arrived speaking zero English</strong> in rural New England. That dual placement is where the interest in SEN, EAL, and student welfare began.</div>
       </div>
 
       <div class="stop rev">
         <div class="mono yr">1997 &mdash; 1999</div>
-        <h3>Cambridge English &amp; IELTS Instructor</h3>
+        <h3>Cambridge English &amp; IELTS Instructor, Kindergarten through Adults</h3>
         <div class="pl">The School for New Languages &middot; Aarau, Switzerland</div>
-        <div class="desc">First international move. Taught Cambridge English exam preparation and IELTS to adult learners in a Swiss language school. Built fluency in working across languages and cultures that would define the next three decades.</div>
+        <div class="ctx">Private language school in German-speaking Switzerland, serving learners from early childhood to adult professionals.</div>
+        <div class="why">First international move. Wanted to teach abroad and use the German I&rsquo;d studied and taught for years.</div>
+        <div class="desc">Taught Cambridge English exam preparation and IELTS across a full age range, from kindergarten to working adults. Built confidence in working across languages, cultures, and developmental stages that would define the next three decades. Living and working in German-speaking Switzerland deepened a bilingual fluency that remains an asset for European roles.</div>
       </div>
 
       <div class="stop rev">
         <div class="mono yr">2000 &mdash; 2003</div>
-        <h3>Columnist, Bangkok Post &middot; Volunteer Literacy Teacher</h3>
-        <div class="pl">Bangkok, Thailand &middot; Sangkhlaburi refugee camp</div>
-        <div class="desc">Wrote a weekly column, <strong>Kat&rsquo;s Window on Thailand</strong>, interpreting Thai culture for the readership of Asia&rsquo;s second-largest English newspaper. Simultaneously volunteered with the Mon Culture and Literature Survival Group, developing literacy materials for refugees in Sangkhlaburi. Also worked as a digital content author for katswindow.net.</div>
+        <h3>Published Columnist &middot; Volunteer Literacy Teacher</h3>
+        <div class="pl">The Bangkok Post &middot; Mon Culture &amp; Literature Survival Group &middot; Thailand</div>
+        <div class="ctx">The Bangkok Post: Asia&rsquo;s second-largest English-language newspaper, serving a readership across Southeast Asia.</div>
+        <div class="desc">Wrote a <strong>weekly column, Kat&rsquo;s Window on Thailand</strong>, interpreting Thai culture, politics, and daily life for an international readership. This was not freelance blogging: it was a regular published column in a major newspaper, requiring deadline discipline, editorial voice, and the ability to make complex cultural material accessible to a broad audience. Simultaneously volunteered with the Mon Culture and Literature Survival Group, <strong>developing literacy materials for refugees in a camp in Sangkhlaburi</strong> on the Myanmar border.</div>
       </div>
 
       <div class="stop rev">
         <div class="mono yr">2003</div>
         <h3>IELTS Instructor (part-time)</h3>
         <div class="pl">Taylor College &middot; Sydney, Australia</div>
-        <div class="desc">IELTS instruction alongside MA TESOL studies at the University of New South Wales.</div>
+        <div class="ctx">University pathway college preparing international students for Australian higher education.</div>
+        <div class="desc">IELTS instruction alongside MA TESOL (with distinction) studies at the University of New South Wales.</div>
       </div>
 
       <div class="stop rev">
         <div class="mono yr">2004 &mdash; 2006</div>
         <h3>K&ndash;12 English Teacher</h3>
-        <div class="pl">International Language School &middot; Mandalay, Myanmar</div>
-        <div class="desc">Taught English across all age groups in Mandalay. First experience designing curriculum for an entire school in a developing-country context.</div>
+        <div class="pl">ILBC (International Language and Business Center) &middot; Mandalay, Myanmar</div>
+        <div class="ctx">A K&ndash;12 school serving 800 students in Myanmar&rsquo;s second city. One of only two foreign staff in the entire town.</div>
+        <div class="why">Wanted to teach where the need was greatest, not where the job was easiest.</div>
+        <div class="desc">Mandalay was the most beautiful and challenging place I have ever lived: <strong>limited basic infrastructure, fluctuating politics and policies</strong>, and the experience of being one of two foreigners in a city of over a million people. Designed curriculum for every age group across the school. This is where I learned to build something from almost nothing, a skill that would prove useful in every role that followed.</div>
       </div>
 
       <div class="stop rev">
         <div class="mono yr">2006 &mdash; 2011</div>
         <h3>Head of EAL &middot; Head of Pastoral, Years 7&ndash;13 &middot; Head of PSHE</h3>
         <div class="pl">Bromsgrove International School &middot; Bangkok, Thailand</div>
-        <div class="ctx">International boarding school, CIS accredited</div>
-        <div class="desc">Combined academic and pastoral leadership across the entire secondary school. This is where leadership began in earnest: running both the EAL provision and the pastoral system for Years 7 through 13, plus PSHE.</div>
+        <div class="ctx">British international boarding school in Bangkok, CIS accredited. Secondary school with students from across Asia and beyond.</div>
+        <div class="why">First senior leadership role. The chance to run both the academic (EAL) and pastoral (Years 7&ndash;13) systems for an entire secondary school.</div>
+        <div class="desc">This is where leadership began in earnest. Held combined academic and pastoral responsibility across the full secondary school, which meant seeing students as whole people rather than splitting them into &ldquo;learning&rdquo; and &ldquo;welfare&rdquo; categories. That integration became a defining feature of every subsequent role.</div>
         <ul class="wins">
           <li>Led EAL curriculum design and in-class support across secondary</li>
           <li>Chaired the PSHCE CIS committee; member of CIS English committee</li>
@@ -174,8 +186,8 @@ footer .mono{color:rgba(243,237,225,.78)}
         <div class="mono yr">2011 &mdash; 2016</div>
         <h3>Professional Development Coordinator &middot; Head of EAL &middot; English Teacher</h3>
         <div class="pl">Dulwich College Beijing &middot; China</div>
-        <div class="ctx">British International School of the Year 2011. IB averages: 37.35 (2014), 38.2 (2015), 37 (2016)</div>
-        <div class="desc">The strongest K&ndash;12 leadership chapter. Five years managing a team of sixteen, building systems that scaled, and delivering measurable impact in a high-performing school.</div>
+        <div class="ctx">One of Beijing&rsquo;s leading international schools. British International School of the Year 2011 (Independent School Awards). IB Diploma averages of 37&ndash;38. Part of the Dulwich College International family of schools.</div>
+        <div class="desc">The strongest K&ndash;12 leadership chapter. Five years managing a team of sixteen, building systems that scaled, and delivering measurable impact in a genuinely high-performing school.</div>
         <ul class="wins">
           <li><strong>12% increase</strong> in senior school attainment within one year through targeted intervention</li>
           <li><strong>300+ admissions interviews</strong> per year; built the assessment framework (NGRT, writing, listening, standardized packet)</li>
@@ -184,9 +196,7 @@ footer .mono{color:rgba(243,237,225,.78)}
           <li>Founded Language Perfect competitive team: <strong>3rd in the world</strong>, 1st place individual (2014)</li>
           <li>Represented EAL on the <strong>Curriculum Committee</strong>; aligned EAL vertically and horizontally</li>
           <li>Originated English for Parents, English for Teaching Assistants, Language Enrichment Group</li>
-          <li>Organized beta testing for blended IELTS platform (CollegePre / Cambridge University Press / Cambridge Assessment)</li>
-          <li>Extended Essay Supervisor, CAS Supervisor, Year 11 mentor, Form Tutor</li>
-          <li>Taught KS3 EAL, IGCSE EAL, KS3 English, IB English B, SEN support, Intensive English, PSHE</li>
+          <li>Beta testing for blended IELTS platform (CollegePre / Cambridge University Press / Cambridge Assessment)</li>
         </ul>
       </div>
 
@@ -194,8 +204,9 @@ footer .mono{color:rgba(243,237,225,.78)}
         <div class="mono yr">2016 &mdash; 2018</div>
         <h3>Director of Student Services, N&ndash;13</h3>
         <div class="pl">Harrow International School Shanghai &middot; China</div>
-        <div class="ctx">British international school, part of the Harrow family. Ages 18 months to 18 years.</div>
-        <div class="desc">Built the entire student services department from nothing. This was a ground-up construction project: framework, pathways, systems, training, and culture, all delivered within twelve months.</div>
+        <div class="ctx">Part of the Harrow family of schools. British curriculum, serving approximately 1,200 students from nursery (18 months) through Year 13.</div>
+        <div class="why">Left Beijing because of air pollution. Came to Harrow for the opportunity to build whole-school SEN, EAL, and Gifted &amp; Talented support from the ground up.</div>
+        <div class="desc">Built the entire student services department from nothing. This was a ground-up construction project: framework, pathways, systems, training, and culture, all delivered within twelve months for a school spanning ages eighteen months to eighteen years.</div>
         <ul class="wins">
           <li><strong>Built whole-school student services</strong> from inception within 12 months (N through Year 13)</li>
           <li>Trained K&ndash;12 faculty in <strong>inclusive practice, CLIL methodology, and differentiation</strong></li>
@@ -203,7 +214,6 @@ footer .mono{color:rgba(243,237,225,.78)}
           <li>Developed and implemented <strong>Individualized Education Plans</strong></li>
           <li>Coordinated Early Years, Junior, and Senior school transitions and placement</li>
           <li>Key member of the school leadership team: strategic and operational planning</li>
-          <li>Partnered with families, teachers, external providers on student support</li>
         </ul>
       </div>
 
@@ -211,20 +221,18 @@ footer .mono{color:rgba(243,237,225,.78)}
         <div class="mono yr">2018 &mdash; 2027</div>
         <h3>Senior Lecturer &middot; DEI Faculty Chair &middot; Center for Student Belonging Facilitator</h3>
         <div class="pl">NYU Shanghai &middot; China</div>
-        <div class="ctx">China&rsquo;s first Sino-US research university. Third degree-granting campus of NYU Global Network. ~2,000 students from 70+ countries. LEED Gold New Bund Campus.</div>
-        <div class="desc">Progressed through Adjunct Faculty, Lecturer, and Senior Lecturer. Designed four interdisciplinary first-year courses, led institutional DEI and belonging work, mentored underrepresented students, and built the curriculum infrastructure for a program serving two thousand students from seventy countries.</div>
+        <div class="ctx">China&rsquo;s first Sino-US research university. Third degree-granting campus of the NYU Global Network. Liberal arts curriculum taught entirely in English to approximately 2,000 students from over 70 countries. LEED Gold New Bund Campus.</div>
+        <div class="why">NYU Shanghai offered the chance to build content-based courses that support EAP students in an EMI transnational education partnership. I choose the theme, I design the course from the ground up, and then I teach it. A dream.</div>
+        <div class="desc">Progressed through Adjunct Faculty, Lecturer, and Senior Lecturer. Designed four interdisciplinary first-year courses, led institutional DEI and belonging work, mentored underrepresented students, and built the curriculum infrastructure for one of the most internationally diverse university programs in China.</div>
         <ul class="wins">
           <li>Designed <strong>4 innovative courses</strong>: Future Focused, (Un)Sustainability, Systems Thinking, History of Rock and Roll</li>
           <li><strong>DEI Faculty Chair</strong>: equity strategy, faculty engagement, curriculum review, community-building</li>
           <li>Led inaugural <strong>Culture and Heritage Exposition</strong> as Community Connections Chair</li>
           <li>Workshop facilitator, <strong>Center for Student Belonging</strong></li>
-          <li>Co-facilitated <strong>LEAD mentorship</strong> for first-generation and underrepresented students (8 mentees)</li>
+          <li>Co-facilitated <strong>LEAD mentorship</strong> for first-generation and underrepresented students</li>
           <li>Recruiter, advisor, and referee for the <strong>UN Millennium Fellowship</strong> (4,000+ fellows, 290+ campuses, 47 countries)</li>
           <li>Served on <strong>Academic Program Review</strong> committees</li>
           <li>Co-founded <strong>NYU Shanghai Sustainability Committee</strong> (LEED Gold campus)</li>
-          <li>Event Ambassador, <strong>No Translation Needed</strong></li>
-          <li>Advisor, <strong>Collective Voice Student Debate</strong>; advisor/performer, faculty-student production of <em>The Great Gatsby</em></li>
-          <li>Founded <strong>The Kitty Committee</strong>: cat rescue/adoption/TNR in Pudong, now 277 members</li>
         </ul>
       </div>
 
@@ -245,12 +253,12 @@ footer .mono{color:rgba(243,237,225,.78)}
     <div class="svc rev">
       <div class="sv"><h3>DEI Faculty Chair</h3><p>Equity strategy, faculty engagement, curriculum review, student support, and community-building across the institution.</p></div>
       <div class="sv"><h3>Center for Student Belonging</h3><p>Workshop facilitator strengthening inclusive campus culture and student connection.</p></div>
-      <div class="sv"><h3>LEAD Mentorship</h3><p>Co-facilitated mentorship for first-generation and underrepresented students. 8 mentees.</p></div>
+      <div class="sv"><h3>LEAD Mentorship</h3><p>Co-facilitated mentorship for first-generation and underrepresented students.</p></div>
       <div class="sv"><h3>UN Millennium Fellowship</h3><p>Recruited applicants, served as referee, presented to Fellows on approaches and resources.</p></div>
       <div class="sv"><h3>Culture and Heritage Exposition</h3><p>Led the inaugural event as Community Connections Chair, promoting harmony across the campus community.</p></div>
       <div class="sv"><h3>Academic Program Review</h3><p>Committee member contributing to curriculum quality, academic standards, and institutional improvement.</p></div>
       <div class="sv"><h3>No Translation Needed</h3><p>Event Ambassador organizing and promoting this campus-wide cross-cultural understanding initiative.</p></div>
-      <div class="sv"><h3>The Kitty Committee</h3><p>Founded Dec 2023. Cat rescue, adoption, TNR, community partnerships, and outreach in Pudong. 277 members.</p></div>
+      <div class="sv"><h3>The Kitty Committee</h3><p>Founded Dec 2023. What began with 3,000 baby chicks in a childhood bedroom eventually became a non-profit cat rescue, adoption, and TNR partnership in Pudong, Shanghai. 277 members.</p></div>
     </div>
   </div>
 </section>
@@ -266,6 +274,11 @@ footer .mono{color:rgba(243,237,225,.78)}
 
 <footer>
   <div class="wrap">
+    <div class="links">
+      <a href="mailto:kat@katswindow.net">kat@katswindow.net</a>
+      <a href="https://www.linkedin.com/in/katherine-kat-tosi-75126347" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
+    </div>
     <div class="foot-end mono">
       <span>Katherine Tosi &middot; Shanghai, China</span>
       <span>Senior education leader &middot; Available July 2027</span>
