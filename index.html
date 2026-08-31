@@ -9,10 +9,12 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20fill%3D%22%2317130F%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Helvetica%2CArial%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22700%22%20fill%3D%22%23E2601B%22%20text-anchor%3D%22middle%22%3EKT%3C%2Ftext%3E%3C%2Fsvg%3E" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Katherine Tosi &middot; Senior Education Leader" />
-<meta property="og:description" content="Katherine Tosi is a senior education leader working across international schools and higher education. Teaching and learning, student services, inclusion, and curriculum design. Available from July 2027." />
+<meta property="og:description" content="Senior education leader. Available July 2027." />
+<meta property="og:image" content="photo.JPG" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Katherine Tosi &middot; Senior Education Leader" />
-<meta name="twitter:description" content="Katherine Tosi is a senior education leader working across international schools and higher education. Teaching and learning, student services, inclusion, and curriculum design. Available from July 2027." />
+<meta name="twitter:description" content="Senior education leader. Available July 2027." />
+<meta name="twitter:image" content="photo.JPG" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Sometype+Mono:wght@400;500;700&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" />
@@ -42,6 +44,9 @@ a{color:inherit}
 .lamp{position:absolute;z-index:0;pointer-events:none;width:min(1000px,125vw);height:min(1000px,125vw);right:-16%;top:-34%;border-radius:50%;background:radial-gradient(circle,rgba(226,96,27,.42) 0%,rgba(226,96,27,.19) 34%,rgba(226,96,27,.05) 58%,rgba(226,96,27,0) 74%);animation:brood 9s ease-in-out infinite alternate}
 @keyframes brood{from{opacity:.7;transform:scale(.955)}to{opacity:1;transform:scale(1.045)}}
 .hero-in{position:relative;z-index:2}
+.hero-top{display:flex;align-items:flex-start;gap:clamp(28px,4vw,48px);flex-wrap:wrap}
+.hero-photo{width:clamp(140px,18vw,200px);height:clamp(140px,18vw,200px);border-radius:50%;object-fit:cover;object-position:center 20%;border:3px solid var(--ink);box-shadow:4px 6px 0 rgba(23,19,15,.22);flex-shrink:0;margin-top:clamp(22px,3vw,36px)}
+@media(max-width:600px){.hero-top{flex-direction:column-reverse}.hero-photo{width:120px;height:120px}}
 .hero h1{margin:22px 0 0;font-size:clamp(58px,13.2vw,178px);font-family:"Bricolage Grotesque",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.045em;line-height:.86}
 .hero h1 em{font-style:normal;display:block;color:var(--amber-deep)}
 .lede{margin:30px 0 0;max-width:37ch;font-size:clamp(19px,2.1vw,25px);line-height:1.44;color:var(--ink-soft)}
@@ -139,14 +144,20 @@ footer h2{margin:20px 0 0;font-family:"Bricolage Grotesque",sans-serif;font-weig
   <div class="lamp"></div>
   <div class="wrap hero-in">
     <span class="mono tag">Shanghai &nbsp;/&nbsp; Teaching since 1992 &nbsp;/&nbsp; Seven countries</span>
-    <h1>Katherine<em>Tosi</em></h1>
-    <p class="role">Senior education leader. Teaching and learning, student services,
-      inclusion, and the honest work of getting a school ready for what comes next.</p>
-    <p class="lede">I build the systems that catch the students a school would otherwise lose &mdash;
-      and the <b>curriculum that makes them want to stay</b>.</p>
-    <div class="acts">
-      <a class="btn solid" href="#contact">Start a conversation</a>
-      <a class="btn" href="marks.html">See the record</a>
+    <div class="hero-top">
+      <div>
+        <h1>Katherine<em>Tosi</em></h1>
+        <p class="role">Senior education leader. Teaching and learning, student services,
+          inclusion, and the honest work of getting a school ready for what comes next.</p>
+        <p class="lede">I build the systems that catch the students a school would otherwise lose &mdash;
+          and the <b>curriculum that makes them want to stay</b>.</p>
+        <div class="acts">
+          <a class="btn solid" href="#contact">Start a conversation</a>
+          <a class="btn" href="marks.html">See the record</a>
+          <a class="btn" href="cv.pdf" target="_blank">Download CV</a>
+        </div>
+      </div>
+      <img class="hero-photo" src="photo.JPG" alt="Katherine Tosi" />
     </div>
     <div class="marks-row">
       <div class="mk"><div class="n">34</div><div class="l">years in classrooms and leadership teams</div></div>
@@ -202,46 +213,14 @@ footer h2{margin:20px 0 0;font-family:"Bricolage Grotesque",sans-serif;font-weig
       My family built our house ourselves, board by board. You measured growth by pencil marks
       on a doorframe. This is the same chart, drawn out longer.</p>
     <div class="frame">
-      <div class="stop rev"><div class="mono yr">1992 &mdash; 1996</div>
-        <h3>German Teacher, Grades 7&ndash;12</h3>
-        <div class="pl">Springfield High School &middot; Vermont, USA</div></div>
-      <div class="stop rev"><div class="mono yr">1997 &mdash; 1999</div>
-        <h3>Cambridge English &amp; IELTS Instructor</h3>
-        <div class="pl">The School for New Languages &middot; Aarau, Switzerland</div></div>
-      <div class="stop rev"><div class="mono yr">2000 &mdash; 2003</div>
-        <h3>Columnist &amp; Volunteer Literacy Teacher</h3>
-        <div class="pl">The Bangkok Post &middot; Mon Culture &amp; Literature Survival Group &middot; Thailand</div>
-        <div class="note">Wrote a weekly column, Kat&rsquo;s Window on Thailand, interpreting Thai
-          culture for Asia&rsquo;s second-largest English newspaper. Developed literacy materials
-          in a refugee camp in Sangkhlaburi.</div></div>
-      <div class="stop rev"><div class="mono yr">2004 &mdash; 2006</div>
-        <h3>K&ndash;12 English Teacher</h3>
-        <div class="pl">International Language School &middot; Mandalay, Myanmar</div></div>
-      <div class="stop rev"><div class="mono yr">2006 &mdash; 2011</div>
-        <h3>Head of EAL &middot; Head of Pastoral, Years 7&ndash;13</h3>
-        <div class="pl">Bromsgrove International School &middot; Bangkok, Thailand</div>
-        <div class="note">Combined academic and pastoral leadership across the secondary school.
-          Served on CIS accreditation committees.</div></div>
-      <div class="stop rev"><div class="mono yr">2011 &mdash; 2016</div>
-        <h3>Professional Development Coordinator &middot; Head of EAL</h3>
-        <div class="pl">Dulwich College Beijing &middot; China</div>
-        <div class="note">British International School of the Year 2011. IB averages of 37&ndash;38.
-          Led a team of sixteen, delivered a twelve percent rise in senior school attainment,
-          built the admissions assessment framework, created the college&rsquo;s Rolling Professional
-          Development plan, and took a student language team to third in the world.</div></div>
-      <div class="stop rev"><div class="mono yr">2016 &mdash; 2018</div>
-        <h3>Director of Student Services, N&ndash;13</h3>
-        <div class="pl">Harrow International School Shanghai &middot; China</div>
-        <div class="note">Built the whole-school student services framework from inception within
-          twelve months, for children aged eighteen months to eighteen years. Trained faculty in
-          inclusive practice, CLIL, and differentiation. Rebuilt admissions around data and interview.</div></div>
-      <div class="stop rev now"><div class="mono yr">2018 &mdash; 2027</div>
-        <h3>Senior Lecturer &middot; DEI Faculty Chair</h3>
-        <div class="pl">NYU Shanghai &middot; China</div>
-        <div class="note">China&rsquo;s first Sino-US research university. Designed four interdisciplinary
-          first-year courses, chair faculty DEI and Community Connections work, facilitate for the
-          Center for Student Belonging, co-facilitate LEAD mentorship for first-generation students,
-          and recruit and referee for the UN Millennium Fellowship.</div></div>
+      <div class="stop rev"><div class="mono yr">1992 &mdash; 1996</div><h3>German Teacher, Grades 7&ndash;12</h3><div class="pl">Springfield High School &middot; Vermont, USA</div></div>
+      <div class="stop rev"><div class="mono yr">1997 &mdash; 1999</div><h3>Cambridge English &amp; IELTS Instructor</h3><div class="pl">The School for New Languages &middot; Aarau, Switzerland</div></div>
+      <div class="stop rev"><div class="mono yr">2000 &mdash; 2003</div><h3>Columnist &amp; Volunteer Literacy Teacher</h3><div class="pl">The Bangkok Post &middot; Mon Culture &amp; Literature Survival Group &middot; Thailand</div><div class="note">Wrote a weekly column, Kat&rsquo;s Window on Thailand, interpreting Thai culture for Asia&rsquo;s second-largest English newspaper. Developed literacy materials in a refugee camp in Sangkhlaburi.</div></div>
+      <div class="stop rev"><div class="mono yr">2004 &mdash; 2006</div><h3>K&ndash;12 English Teacher</h3><div class="pl">International Language School &middot; Mandalay, Myanmar</div></div>
+      <div class="stop rev"><div class="mono yr">2006 &mdash; 2011</div><h3>Head of EAL &middot; Head of Pastoral, Years 7&ndash;13</h3><div class="pl">Bromsgrove International School &middot; Bangkok, Thailand</div><div class="note">Combined academic and pastoral leadership across the secondary school. Served on CIS accreditation committees.</div></div>
+      <div class="stop rev"><div class="mono yr">2011 &mdash; 2016</div><h3>Professional Development Coordinator &middot; Head of EAL</h3><div class="pl">Dulwich College Beijing &middot; China</div><div class="note">British International School of the Year 2011. IB averages of 37&ndash;38. Led a team of sixteen, delivered a twelve percent rise in senior school attainment, built the admissions assessment framework, created the college&rsquo;s Rolling Professional Development plan, and took a student language team to third in the world.</div></div>
+      <div class="stop rev"><div class="mono yr">2016 &mdash; 2018</div><h3>Director of Student Services, N&ndash;13</h3><div class="pl">Harrow International School Shanghai &middot; China</div><div class="note">Built the whole-school student services framework from inception within twelve months, for children aged eighteen months to eighteen years. Trained faculty in inclusive practice, CLIL, and differentiation. Rebuilt admissions around data and interview.</div></div>
+      <div class="stop rev now"><div class="mono yr">2018 &mdash; 2027</div><h3>Senior Lecturer &middot; DEI Faculty Chair</h3><div class="pl">NYU Shanghai &middot; China</div><div class="note">China&rsquo;s first Sino-US research university. Designed four interdisciplinary first-year courses, chair faculty DEI and Community Connections work, facilitate for the Center for Student Belonging, co-facilitate LEAD mentorship for first-generation students, and recruit and referee for the UN Millennium Fellowship.</div></div>
     </div>
     <p class="rev" style="margin-top:clamp(30px,4vw,48px)"><a href="marks.html" style="color:var(--amber-text);font-weight:600;text-decoration:underline;text-underline-offset:4px">See the full record with school context and key wins &rarr;</a></p>
   </div>
@@ -252,47 +231,19 @@ footer h2{margin:20px 0 0;font-family:"Bricolage Grotesque",sans-serif;font-weig
   <div class="wrap">
     <span class="mono">The first line of my teaching philosophy</span>
     <blockquote>Never think you know anything about the students sitting in front of you.</blockquote>
-    <p class="src">When I was eight, my parents put <b>three thousand baby chicks</b> in my bedroom for a week,
-      under heat lamps, with the radio on to cover the noise. We built our own house and lived in it
-      without running water or doors. I moved eight times before I finished school and arrived in every
-      classroom halfway through the year. People decided I was stupid. <b>An English teacher named Caroline
-      Hopkins decided otherwise</b>, and told me to apply to university. Everything I have built since is
-      an argument that she was right about more children than me.</p>
+    <p class="src">When I was eight, my parents put <b>three thousand baby chicks</b> in my bedroom for a week, under heat lamps, with the radio on to cover the noise. We built our own house and lived in it without running water or doors. I moved eight times before I finished school and arrived in every classroom halfway through the year. People decided I was stupid. <b>An English teacher named Caroline Hopkins decided otherwise</b>, and told me to apply to university. Everything I have built since is an argument that she was right about more children than me.</p>
   </div>
 </section>
 
 <section id="teaching">
   <div class="wrap">
     <div class="head rev"><span class="mono idx">03</span><h2>What I teach</h2></div>
-    <p class="rev" style="max-width:56ch;color:var(--ink-soft);margin:-14px 0 clamp(34px,4.5vw,52px)">
-      Four first-year courses at NYU Shanghai. Each one uses a genuinely difficult question as the
-      vehicle for academic English &mdash; speaking, listening, source work, and the confidence to
-      argue in a second language.</p>
+    <p class="rev" style="max-width:56ch;color:var(--ink-soft);margin:-14px 0 clamp(34px,4.5vw,52px)">Four first-year courses at NYU Shanghai. Each one uses a genuinely difficult question as the vehicle for academic English &mdash; speaking, listening, source work, and the confidence to argue in a second language.</p>
     <div class="courses">
-      <div class="course live">
-        <div class="mono yr">Fall 2026 &middot; Current</div>
-        <h3>Future Focused: The Future of Work</h3>
-        <p>What will work look like, and how do I prepare for it? Automation, AI ethics, employability,
-          and a semester-long portfolio built alongside four Career Development Center visits.</p>
-      </div>
-      <div class="course">
-        <div class="mono yr">2024 &ndash; 2025</div>
-        <h3>(Un)Sustainability</h3>
-        <p>The UN Sustainable Development Goals as a working problem set. Community volunteering,
-          student-run SDG campaigns, reflective journals, and a research poster show.</p>
-      </div>
-      <div class="course">
-        <div class="mono yr">Previous</div>
-        <h3>Systems Thinking</h3>
-        <p>How to see a whole system instead of its parts, and how to talk about complexity
-          without flattening it.</p>
-      </div>
-      <div class="course">
-        <div class="mono yr">Previous</div>
-        <h3>The History of Rock and Roll</h3>
-        <p>Cultural history as a listening and argument course. Proof that academic rigour and
-          genuine delight are not opposites.</p>
-      </div>
+      <div class="course live"><div class="mono yr">Fall 2026 &middot; Current</div><h3>Future Focused: The Future of Work</h3><p>What will work look like, and how do I prepare for it? Automation, AI ethics, employability, and a semester-long portfolio built alongside four Career Development Center visits.</p></div>
+      <div class="course"><div class="mono yr">2024 &ndash; 2025</div><h3>(Un)Sustainability</h3><p>The UN Sustainable Development Goals as a working problem set. Community volunteering, student-run SDG campaigns, reflective journals, and a research poster show.</p></div>
+      <div class="course"><div class="mono yr">Previous</div><h3>Systems Thinking</h3><p>How to see a whole system instead of its parts, and how to talk about complexity without flattening it.</p></div>
+      <div class="course"><div class="mono yr">Previous</div><h3>The History of Rock and Roll</h3><p>Cultural history as a listening and argument course. Proof that academic rigour and genuine delight are not opposites.</p></div>
     </div>
   </div>
 </section>
@@ -306,27 +257,19 @@ footer h2{margin:20px 0 0;font-family:"Bricolage Grotesque",sans-serif;font-weig
       <div class="rev">
         <span class="mono" style="color:var(--ink-soft);display:block;margin-bottom:14px">Education</span>
         <ul class="cl">
-          <li><div class="t">National Professional Qualification for Headship</div>
-              <div class="s">UCL Institute of Education &middot; in progress, May 2027</div></li>
-          <li><div class="t">PGCert, Inclusion and Special Needs (SENCO)</div>
-              <div class="s">University of Wolverhampton &middot; 2014&ndash;2015</div></li>
-          <li><div class="t">MA, TESOL (with distinction)</div>
-              <div class="s">University of New South Wales, Sydney &middot; 2002&ndash;2004</div></li>
-          <li><div class="t">BA, Literary and Cultural Studies; Creative Writing</div>
-              <div class="s">University of Vermont &middot; minor in German &middot; 1987&ndash;1992</div></li>
+          <li><div class="t">National Professional Qualification for Headship</div><div class="s">UCL Institute of Education &middot; in progress, May 2027</div></li>
+          <li><div class="t">PGCert, Inclusion and Special Needs (SENCO)</div><div class="s">University of Wolverhampton &middot; 2014&ndash;2015</div></li>
+          <li><div class="t">MA, TESOL (with distinction)</div><div class="s">University of New South Wales, Sydney &middot; 2002&ndash;2004</div></li>
+          <li><div class="t">BA, Literary and Cultural Studies; Creative Writing</div><div class="s">University of Vermont &middot; minor in German &middot; 1987&ndash;1992</div></li>
         </ul>
       </div>
       <div class="rev">
         <span class="mono" style="color:var(--ink-soft);display:block;margin-bottom:14px">Licensure &amp; Service</span>
         <ul class="cl">
-          <li><div class="t">English Language Arts Teaching License, Grades 7&ndash;12</div>
-              <div class="s">State of Vermont, USA &middot; valid through June 2029</div></li>
-          <li><div class="t">School Leadership Licensure Assessment</div>
-              <div class="s">ETS SLLA 6990 &middot; score 164</div></li>
-          <li><div class="t">Designated Safeguarding Lead</div>
-              <div class="s">UK CPD &middot; current</div></li>
-          <li><div class="t">Founder, The Kitty Committee</div>
-              <div class="s">Cat rescue and rehoming in Pudong, Shanghai &middot; 277 members</div></li>
+          <li><div class="t">English Language Arts Teaching License, Grades 7&ndash;12</div><div class="s">State of Vermont, USA &middot; valid through June 2029</div></li>
+          <li><div class="t">School Leadership Licensure Assessment</div><div class="s">ETS SLLA 6990 &middot; score 164</div></li>
+          <li><div class="t">Designated Safeguarding Lead</div><div class="s">UK CPD &middot; current</div></li>
+          <li><div class="t">Founder, The Kitty Committee</div><div class="s">Cat rescue and rehoming in Pudong, Shanghai &middot; 277 members</div></li>
         </ul>
       </div>
     </div>
@@ -340,6 +283,7 @@ footer h2{margin:20px 0 0;font-family:"Bricolage Grotesque",sans-serif;font-weig
     <div class="links">
       <a href="mailto:kat@katswindow.net">kat@katswindow.net</a>
       <a href="https://www.linkedin.com/in/katherine-kat-tosi-75126347" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
       <a href="https://thefutureofwork.github.io/EAP100/" target="_blank" rel="noopener">EAP 100 Course Site</a>
     </div>
     <div class="foot-end mono">
@@ -353,9 +297,7 @@ footer h2{margin:20px 0 0;font-family:"Bricolage Grotesque",sans-serif;font-weig
 <script>
 (function(){
   var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
-    });
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
   }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
   document.querySelectorAll('.rev, .stop').forEach(function(el){ io.observe(el); });
 })();
