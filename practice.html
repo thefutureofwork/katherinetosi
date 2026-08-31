@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Practice &middot; Katherine Tosi</title>
+<meta name="description" content="Katherine Tosi's teaching practice: Students as Partners pedagogy, experiential learning, curriculum design, and classroom evidence from NYU Shanghai." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20fill%3D%22%2317130F%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Helvetica%2CArial%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22700%22%20fill%3D%22%23E2601B%22%20text-anchor%3D%22middle%22%3EKT%3C%2Ftext%3E%3C%2Fsvg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Sometype+Mono:wght@400;500;700&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" />
+<style>
+:root{--kraft:#DCD0B6;--ink:#17130F;--ink-soft:#4A3F33;--amber:#E2601B;--amber-deep:#B8430A;--amber-text:#7A2704;--bone:#F3EDE1;--stud:rgba(23,19,15,.10);--bay:16.6667%}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--kraft);color:var(--ink);font-family:Vollkorn,Georgia,serif;font-size:18px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.studs{position:fixed;inset:0;pointer-events:none;z-index:0;background-image:repeating-linear-gradient(to right,var(--stud) 0 1px,transparent 1px var(--bay))}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.5;background-image:radial-gradient(rgba(23,19,15,.09) 1px,transparent 1.1px);background-size:3px 3px}
+.shell{position:relative;z-index:2}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+.mono{font-family:"Sometype Mono",ui-monospace,monospace;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+a{color:inherit}
+.rule{height:1px;background:rgba(23,19,15,.22);border:0;margin:0}
+.rail{position:sticky;top:0;z-index:40;background:rgba(220,208,182,.97);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);border-bottom:1px solid rgba(23,19,15,.16)}
+.rail-in{display:flex;align-items:center;justify-content:space-between;gap:18px;height:54px}
+.rail .who{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;letter-spacing:-.02em;font-size:16px;text-decoration:none}
+.rail nav{display:flex;gap:24px}
+.rail nav a{text-decoration:none;color:#372E25;transition:color .18s}
+.rail nav a:hover{color:var(--amber-text)}
+.tag{display:inline-flex;align-items:center;gap:9px;color:var(--ink-soft)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(226,96,27,.55);animation:ping 3.4s ease-out infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(226,96,27,.5)}70%{box-shadow:0 0 0 11px rgba(226,96,27,0)}100%{box-shadow:0 0 0 0 rgba(226,96,27,0)}}
+@media(max-width:780px){.rail nav{display:none}}
+.pg{padding:clamp(64px,10vw,120px) 0 clamp(40px,5vw,64px)}
+.pg h1{margin:16px 0 0;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(42px,8vw,96px);letter-spacing:-.04em;line-height:.92}
+.pg .sub{margin-top:22px;max-width:52ch;font-size:clamp(18px,2vw,22px);line-height:1.5;color:var(--ink-soft)}
+section{padding:clamp(56px,8vw,100px) 0}
+.sec-head{margin-bottom:clamp(28px,4vw,46px)}
+.sec-head .idx{color:var(--amber-text)}
+.sec-head h2{margin:0;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(28px,4.2vw,48px);letter-spacing:-.035em;line-height:1}
+.prose{max-width:68ch}
+.prose p{margin:0 0 20px;font-size:clamp(17px,1.7vw,20px);line-height:1.65}
+.prose p:last-child{margin-bottom:0}
+.prose strong{font-weight:600}
+.principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(23,19,15,.22);border:1px solid rgba(23,19,15,.22);margin-top:clamp(34px,5vw,56px)}
+@media(max-width:820px){.principles{grid-template-columns:1fr}}
+.prin{background:var(--kraft);padding:clamp(24px,3vw,36px)}
+.prin:hover{background:var(--bone)}
+.prin h3{margin:0 0 10px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:clamp(20px,2.4vw,26px);letter-spacing:-.025em;line-height:1.14}
+.prin p{margin:0;font-size:16px;line-height:1.56;color:var(--ink-soft)}
+.ev-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,4vw,52px);margin-top:clamp(34px,5vw,56px)}
+@media(max-width:820px){.ev-grid{grid-template-columns:1fr}}
+.ev{border-top:1.5px solid var(--ink);padding-top:18px}
+.ev .mono{color:var(--ink-soft);display:block;margin-bottom:10px}
+.ev ul{margin:0;padding:0 0 0 20px;list-style:disc}
+.ev li{margin-bottom:10px;font-size:16.5px;line-height:1.5}
+.qb{position:relative;background:var(--ink);color:var(--bone);overflow:hidden;padding:clamp(56px,8vw,96px) 0}
+.qb .wrap{position:relative;z-index:2}
+.qb .attr{margin-top:22px;color:rgba(243,237,225,.7);font-size:15px}
+.qb .attr b{color:var(--bone);font-weight:600}
+.qb blockquote{margin:0;font-family:Vollkorn,Georgia,serif;font-style:italic;font-size:clamp(20px,2.8vw,30px);line-height:1.5;max-width:56ch;color:rgba(243,237,225,.92)}
+.qb blockquote + blockquote{margin-top:clamp(34px,4vw,52px);padding-top:clamp(34px,4vw,52px);border-top:1px solid rgba(243,237,225,.2)}
+.lamp3{position:absolute;z-index:0;pointer-events:none;width:min(700px,120vw);height:min(700px,120vw);right:-20%;top:-40%;border-radius:50%;background:radial-gradient(circle,rgba(226,96,27,.35) 0%,rgba(226,96,27,.12) 40%,rgba(226,96,27,0) 68%);animation:brood 10s ease-in-out infinite alternate}
+@keyframes brood{from{opacity:.7;transform:scale(.955)}to{opacity:1;transform:scale(1.045)}}
+.sap-list{border-top:1.5px solid var(--ink);margin-top:clamp(34px,5vw,56px)}
+.sap-item{display:flex;gap:16px;align-items:baseline;padding:15px 0;border-bottom:1px solid rgba(23,19,15,.2)}
+.sap-item .k{color:var(--amber-text);flex:0 0 18px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700}
+.sap-item .v{font-size:17px;line-height:1.5}
+.cd{margin-top:clamp(34px,5vw,56px)}
+.cd-item{border-top:1.5px solid var(--ink);padding:clamp(24px,3.5vw,40px) 0}
+.cd-item .mono{color:var(--ink-soft);display:block;margin-bottom:8px}
+.cd-item h3{margin:0 0 12px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:clamp(22px,2.8vw,30px);letter-spacing:-.025em;line-height:1.12}
+.cd-item.live h3{color:var(--amber-text)}
+.cd-item p{margin:0 0 12px;font-size:17px;line-height:1.6;max-width:64ch;color:var(--ink-soft)}
+.cd-item p:last-child{margin-bottom:0}
+.cd-item strong{color:var(--ink);font-weight:600}
+.back{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink-soft);transition:color .18s;margin-top:clamp(40px,5vw,64px)}
+.back:hover{color:var(--amber-text)}
+.back svg{width:18px;height:18px}
+footer{background:var(--ink);color:var(--bone);padding:clamp(40px,6vw,64px) 0 32px}
+footer .mono{color:rgba(243,237,225,.78)}
+.foot-end{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
+.rev{opacity:0;transform:translateY(16px);transition:opacity .62s ease,transform .62s cubic-bezier(.2,.7,.3,1)}
+.rev.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;transition:none}.lamp3,.dot{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="studs"></div>
+<div class="grain"></div>
+<div class="shell">
+
+<header class="rail">
+  <div class="wrap rail-in">
+    <a class="who" href="index.html">Katherine Tosi</a>
+    <nav class="mono">
+      <a href="practice.html">Practice</a>
+      <a href="index.html#marks">Marks</a>
+      <a href="index.html#teaching">Teaching</a>
+      <a href="index.html#credentials">Credentials</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <span class="mono tag"><span class="dot"></span>Open July 2027</span>
+  </div>
+</header>
+
+<section class="pg">
+  <div class="wrap">
+    <span class="mono" style="color:var(--ink-soft)">How I teach and why</span>
+    <h1>The Practice</h1>
+    <p class="sub">I teach English for Academic Purposes at NYU Shanghai. But the real work is building classrooms where first-year students from seventy countries learn to think out loud, argue with evidence, and trust that the room will hold them while they try.</p>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<section id="philosophy">
+  <div class="wrap">
+    <div class="sec-head rev"><span class="mono idx">01</span>&ensp;<h2>Teaching philosophy</h2></div>
+    <div class="prose rev">
+      <p>My overarching goal is <strong>psychological safety</strong>. Students feel comfortable expressing themselves, asking questions, and making mistakes without fear of embarrassment. This matters especially in language learning, where taking risks and making errors are part of the process. When students feel safe, they participate. When they participate, they learn.</p>
+      <p>I believe the focus of teaching must be fundamentally collaborative, examining perceived hierarchies between instructors and students to create environments characterized by discovery, self-awareness, and belonging. <strong>The most important aspect of my work is whom I teach, not what I teach.</strong></p>
+      <p>I integrate digital technologies, interdisciplinary inquiry, and experiential learning into every course. Assignments build critical thinking, communication, collaboration, digital literacy, adaptability, and cross-cultural competence. My pedagogy has a name: <strong>Students as Partners</strong>.</p>
+    </div>
+    <div class="principles rev">
+      <div class="prin">
+        <h3>Respect</h3>
+        <p>Every student arrives with a story I cannot see. My job is to figure out their present status and cook with whatever is on hand.</p>
+      </div>
+      <div class="prin">
+        <h3>Reciprocity</h3>
+        <p>Students co-create syllabi, review each other's work, negotiate roles in team projects, and evaluate their own learning using structured DEIP reflections.</p>
+      </div>
+      <div class="prin">
+        <h3>Shared responsibility</h3>
+        <p>Learning is not something I do to students. It is something we build together, from the first day's syllabus discussion to the final portfolio showcase.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sap">
+  <div class="wrap">
+    <div class="sec-head rev"><span class="mono idx">02</span>&ensp;<h2>Students as Partners in practice</h2></div>
+    <div class="prose rev">
+      <p>SaP is not a label I attach after the fact. It is a sustained, targeted pedagogical strategy that shapes how I design assessments, structure class time, and share authority with learners.</p>
+    </div>
+    <div class="sap-list rev">
+      <div class="sap-item"><span class="k">&bull;</span><span class="v">Peer review and feedback built into every project cycle</span></div>
+      <div class="sap-item"><span class="k">&bull;</span><span class="v">Reflective journals using the DEIP framework (Describe, Evaluate, Interpret, Plan) require students to analyze their own learning strategies and group work</span></div>
+      <div class="sap-item"><span class="k">&bull;</span><span class="v">Team-based SDG campaigns and poster shows require students to negotiate roles, set goals, and evaluate contributions</span></div>
+      <div class="sap-item"><span class="k">&bull;</span><span class="v">The syllabus is updated based on class discussion and student feedback</span></div>
+      <div class="sap-item"><span class="k">&bull;</span><span class="v">Self-directed learning assignments with peer and self-evaluation</span></div>
+      <div class="sap-item"><span class="k">&bull;</span><span class="v">Student participation tracking sheets used collaboratively to discuss final grades</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="qb">
+  <div class="lamp3"></div>
+  <div class="wrap">
+    <blockquote>&ldquo;Students were positioned as policy thinkers and collaborators rather than passive learners. Kat created a learning environment that balanced support with intellectual challenge. I was reminded of how impactful teaching can be when this challenge is tied to real-world issues that stretch students&rsquo; academic, linguistic and disciplinary boundaries.&rdquo;</blockquote>
+    <p class="attr"><b>Dr. Steve Iams</b>, Assistant Dean for Academic Affairs, NYU Shanghai &middot; Observation letter, January 2026</p>
+
+    <blockquote>&ldquo;A highly interactive, student-centered lesson. One of the stand-out elements was the positive atmosphere in which it took place. Students clearly felt supported and included. Respect for you as an instructor was obvious.&rdquo;</blockquote>
+    <p class="attr"><b>Catherine Journeaux</b>, EAP Faculty &middot; Classroom observation, December 2024</p>
+  </div>
+</div>
+
+<section id="courses">
+  <div class="wrap">
+    <div class="sec-head rev"><span class="mono idx">03</span>&ensp;<h2>The courses</h2></div>
+    <div class="prose rev">
+      <p>I have designed four interdisciplinary first-year courses at NYU Shanghai. Each uses a genuinely difficult question as the vehicle for academic English: speaking, listening, source work, reflection, and the confidence to argue in a second language.</p>
+    </div>
+    <div class="cd">
+      <div class="cd-item live rev">
+        <span class="mono">Fall 2026 &middot; Current</span>
+        <h3>Future Focused: The Future of Work</h3>
+        <p><strong>Big question:</strong> What will work look like in the future, and how can I prepare for it?</p>
+        <p>Five units: Understanding Work, Technology and the Changing Workplace, The Future Workplace, Ethics and Citizenship in the Age of AI, Communication Skills for the Future. Integrated Career Development Center partnership with four visits, resume drafting, career fair preparation, and a final portfolio showcase. All original course materials (no textbook). Student Workbook with ACAPS source evaluation and Cornell note frameworks.</p>
+        <p><strong>Assessments:</strong> Two listening exams (20% each), informative presentation (20%), persuasive speech (20%), final portfolio with student showcase (10%), participation (10%).</p>
+      </div>
+      <div class="cd-item rev">
+        <span class="mono">2024 &ndash; 2025 &middot; 38 students</span>
+        <h3>(Un)Sustainability</h3>
+        <p><strong>Big question:</strong> What does sustainable development look like, and what is your role in it?</p>
+        <p>Students completed 4&ndash;5 hours of community volunteering, ran informative and persuasive SDG campaign presentations, wrote weekly DEIP reflective journals, used the MIT En-ROADS climate simulator in role-playing exercises, and presented at an end-of-semester poster show. Direct democracy voting systems created by students were shared with student government.</p>
+      </div>
+      <div class="cd-item rev">
+        <span class="mono">Previous &middot; 20 students</span>
+        <h3>Systems Thinking</h3>
+        <p><strong>Capstone:</strong> A 30-minute research interview with someone the student does not know, synthesized into a 15-minute video presentation using primary and secondary sources.</p>
+        <p>Weekly objectives included mapping causal loops, analyzing the Iceberg Model, and surfacing assumptions on controversial issues. Peer review and student-led presentations were core components.</p>
+      </div>
+      <div class="cd-item rev">
+        <span class="mono">Previous</span>
+        <h3>The History of Rock and Roll</h3>
+        <p>Cultural history as a listening and argument course. Proof that academic rigour and genuine delight are not opposites.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<section id="evidence">
+  <div class="wrap">
+    <div class="sec-head rev"><span class="mono idx">04</span>&ensp;<h2>Skills students develop</h2></div>
+    <div class="ev-grid rev">
+      <div class="ev">
+        <span class="mono">Thinking &amp; Learning</span>
+        <ul>
+          <li>Self-directed learning and metacognition</li>
+          <li>Critical thinking and analysis</li>
+          <li>Reflective practice and goal setting</li>
+          <li>Problem-solving and adaptability</li>
+        </ul>
+      </div>
+      <div class="ev">
+        <span class="mono">Communication &amp; Collaboration</span>
+        <ul>
+          <li>Academic writing and oral presentation</li>
+          <li>Collaboration and teamwork</li>
+          <li>Digital literacy and research</li>
+          <li>Social responsibility and global awareness</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="leadership">
+  <div class="wrap">
+    <div class="sec-head rev"><span class="mono idx">05</span>&ensp;<h2>Leadership development</h2></div>
+    <div class="prose rev">
+      <p>In November 2025 I was accepted into the <strong>National Professional Qualification for Headship</strong> at UCL Institute of Education, ranked number one in the world for education for the fourteenth consecutive year. My thesis examines how school leaders can guide their communities through AI and academic integrity: not with fear or blanket bans, but with ethical frameworks, redesigned assessments, and genuine collaboration with teachers and students.</p>
+      <p>In August 2025 I passed the <strong>School Leadership Licensure Assessment</strong> (SLLA 6990, score 164), qualifying me as a school administrator in grades 7&ndash;12 in the United States.</p>
+      <p>My Leadership Circle diagnostics confirm strengths in <strong>moral purpose, authenticity, composure, and decisiveness</strong>. My development focus is the Relating cluster: mentoring and developing others, fostering team play, and bringing people along rather than charging ahead alone.</p>
+      <p>My vision for education: schools and universities that are <strong>ethical, evidence-informed learning communities</strong> where young people grow as whole people, intellectually, socially, and morally, rather than places that simply produce exam results.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-bottom:clamp(56px,7vw,80px)">
+  <div class="wrap">
+    <a class="back mono" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to home
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-end mono">
+      <span>Katherine Tosi &middot; Shanghai, China</span>
+      <span>Senior education leader &middot; Available July 2027</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script>
+(function(){
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+  },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.rev').forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
