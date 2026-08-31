@@ -20,37 +20,15 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Sometype+Mono:wght@400;500;700&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap" />
 
 <style>
-:root{
-  --kraft:#DCD0B6;
-  --kraft-deep:#CDBF9F;
-  --ink:#17130F;
-  --ink-soft:#4A3F33;
-  --amber:#E2601B;
-  --amber-deep:#B8430A;
-  --amber-text:#7A2704;
-  --pine:#2C5449;
-  --bone:#F3EDE1;
-  --stud:rgba(23,19,15,.10);
-  --bay:16.6667%;
-}
+:root{--kraft:#DCD0B6;--kraft-deep:#CDBF9F;--ink:#17130F;--ink-soft:#4A3F33;--amber:#E2601B;--amber-deep:#B8430A;--amber-text:#7A2704;--pine:#2C5449;--bone:#F3EDE1;--stud:rgba(23,19,15,.10);--bay:16.6667%}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{
-  margin:0;
-  background:var(--kraft);
-  color:var(--ink);
-  font-family:Vollkorn,Georgia,serif;
-  font-size:18px;
-  line-height:1.6;
-  overflow-x:hidden;
-  -webkit-font-smoothing:antialiased;
-}
+body{margin:0;background:var(--kraft);color:var(--ink);font-family:Vollkorn,Georgia,serif;font-size:18px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 .studs{position:fixed;inset:0;pointer-events:none;z-index:0;background-image:repeating-linear-gradient(to right,var(--stud) 0 1px,transparent 1px var(--bay));background-position:0 0}
 .grain{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.5;background-image:radial-gradient(rgba(23,19,15,.09) 1px,transparent 1.1px);background-size:3px 3px}
 .shell{position:relative;z-index:2}
 .wrap{max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
 .mono{font-family:"Sometype Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
-.disp{font-family:"Bricolage Grotesque",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.035em;line-height:.92}
 a{color:inherit}
 .rule{height:1px;background:rgba(23,19,15,.22);border:0;margin:0}
 .tag{display:inline-flex;align-items:center;gap:9px;color:var(--ink-soft)}
@@ -85,8 +63,7 @@ a{color:inherit}
 @media(max-width:720px){.marks-row{grid-template-columns:1fr}.mk + .mk{padding-left:0;border-left:0;border-top:1px solid rgba(23,19,15,.2)}}
 section{position:relative;padding:clamp(64px,9vw,116px) 0}
 .head{display:flex;align-items:flex-start;gap:16px;margin-bottom:clamp(30px,4vw,50px)}
-.head .idx{padding-top:.42em;flex:0 0 auto}
-.head .idx{color:var(--amber-text)}
+.head .idx{padding-top:.42em;flex:0 0 auto;color:var(--amber-text)}
 .head h2{margin:0;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(30px,4.6vw,54px);letter-spacing:-.035em;line-height:1}
 .split{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(34px,6vw,80px);align-items:start}
 @media(max-width:900px){.split{grid-template-columns:1fr}}
@@ -153,7 +130,7 @@ footer h2{margin:20px 0 0;font-family:"Bricolage Grotesque",sans-serif;font-weig
     <a class="who" href="index.html">Katherine Tosi</a>
     <nav class="mono">
       <a href="practice.html">Practice</a>
-      <a href="#marks">Marks</a>
+      <a href="marks.html">Marks</a>
       <a href="#teaching">Teaching</a>
       <a href="#credentials">Credentials</a>
       <a href="#contact">Contact</a>
@@ -173,7 +150,7 @@ footer h2{margin:20px 0 0;font-family:"Bricolage Grotesque",sans-serif;font-weig
       and the <b>curriculum that makes them want to stay</b>.</p>
     <div class="acts">
       <a class="btn solid" href="#contact">Start a conversation</a>
-      <a class="btn" href="#marks">See the record</a>
+      <a class="btn" href="marks.html">See the record</a>
     </div>
 
     <div class="marks-row">
@@ -279,6 +256,8 @@ footer h2{margin:20px 0 0;font-family:"Bricolage Grotesque",sans-serif;font-weig
           Center for Student Belonging, co-facilitate LEAD mentorship for first-generation students,
           and recruit and referee for the UN Millennium Fellowship.</div></div>
     </div>
+
+    <p class="rev" style="margin-top:clamp(30px,4vw,48px)"><a href="marks.html" style="color:var(--amber-text);font-weight:600;text-decoration:underline;text-underline-offset:4px">See the full record with school context and key wins &rarr;</a></p>
   </div>
 </section>
 
