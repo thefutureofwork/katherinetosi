@@ -31,25 +31,18 @@ a{color:inherit}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(226,96,27,.55);animation:ping 3.4s ease-out infinite}
 @keyframes ping{0%{box-shadow:0 0 0 0 rgba(226,96,27,.5)}70%{box-shadow:0 0 0 11px rgba(226,96,27,0)}100%{box-shadow:0 0 0 0 rgba(226,96,27,0)}}
 @media(max-width:780px){.rail nav{display:none}}
-
-/* page header */
 .pg{padding:clamp(64px,10vw,120px) 0 clamp(40px,5vw,64px)}
 .pg h1{margin:16px 0 0;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(42px,8vw,96px);letter-spacing:-.04em;line-height:.92}
 .pg .sub{margin-top:22px;max-width:52ch;font-size:clamp(18px,2vw,22px);line-height:1.5;color:var(--ink-soft)}
-
-/* stats row */
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(23,19,15,.22);border:1px solid rgba(23,19,15,.22);margin-top:clamp(40px,5vw,64px)}
 @media(max-width:720px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .st{background:var(--kraft);padding:clamp(20px,2.8vw,32px)}
 .st .n{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(32px,4.4vw,52px);line-height:1;letter-spacing:-.04em}
 .st .l{margin-top:8px;color:var(--ink-soft);font-size:14.5px;line-height:1.35}
-
 section{padding:clamp(56px,8vw,100px) 0}
 .sec-head{margin-bottom:clamp(28px,4vw,46px)}
 .sec-head .idx{color:var(--amber-text)}
 .sec-head h2{margin:0;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(28px,4.2vw,48px);letter-spacing:-.035em;line-height:1}
-
-/* timeline */
 .frame{position:relative;padding-left:clamp(56px,8vw,104px)}
 .frame::before{content:"";position:absolute;left:clamp(18px,3vw,34px);top:4px;bottom:4px;width:3px;background:linear-gradient(to bottom,var(--ink) 0%,var(--ink) 92%,rgba(23,19,15,0) 100%)}
 .stop{position:relative;padding:clamp(20px,2.6vw,32px) 0}
@@ -66,22 +59,17 @@ section{padding:clamp(56px,8vw,100px) 0}
 .stop .wins li{margin-bottom:8px;font-size:16px;line-height:1.5;color:var(--ink-soft)}
 .stop .wins li strong{color:var(--ink);font-weight:600}
 .stop.now h3{color:var(--amber-text)}
-
-/* quote strip */
 .qstrip{background:var(--ink);color:var(--bone);padding:clamp(48px,7vw,80px) 0;position:relative;overflow:hidden}
 .qstrip .wrap{position:relative;z-index:2}
 .qstrip blockquote{margin:0;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:clamp(24px,4.2vw,48px);letter-spacing:-.035em;line-height:1.08;max-width:22ch}
 .lamp4{position:absolute;z-index:0;pointer-events:none;width:min(600px,110vw);height:min(600px,110vw);right:-18%;bottom:-44%;border-radius:50%;background:radial-gradient(circle,rgba(226,96,27,.4) 0%,rgba(226,96,27,.13) 38%,rgba(226,96,27,0) 66%);animation:brood 10s ease-in-out infinite alternate}
 @keyframes brood{from{opacity:.7;transform:scale(.955)}to{opacity:1;transform:scale(1.045)}}
-
-/* service grid */
 .svc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:rgba(23,19,15,.22);border:1px solid rgba(23,19,15,.22);margin-top:clamp(34px,5vw,56px)}
 @media(max-width:760px){.svc{grid-template-columns:1fr}}
 .sv{background:var(--kraft);padding:clamp(22px,3vw,34px)}
 .sv:hover{background:var(--bone)}
 .sv h3{margin:0 0 8px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:clamp(17px,1.8vw,20px);letter-spacing:-.015em;line-height:1.2}
 .sv p{margin:0;font-size:15.5px;line-height:1.5;color:var(--ink-soft)}
-
 .back{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink-soft);transition:color .18s;margin-top:clamp(40px,5vw,64px)}
 .back:hover{color:var(--amber-text)}
 .back svg{width:18px;height:18px}
@@ -151,7 +139,7 @@ footer .mono{color:rgba(243,237,225,.78)}
         <div class="mono yr">2000 &mdash; 2003</div>
         <h3>Columnist, Bangkok Post &middot; Volunteer Literacy Teacher</h3>
         <div class="pl">Bangkok, Thailand &middot; Sangkhlaburi refugee camp</div>
-        <div class="desc">Wrote a weekly column, <strong>Kat's Window on Thailand</strong>, interpreting Thai culture for the readership of Asia's second-largest English newspaper. Simultaneously volunteered with the Mon Culture and Literature Survival Group, developing literacy materials for refugees in Sangkhlaburi. Also worked as a digital content author for katswindow.net.</div>
+        <div class="desc">Wrote a weekly column, <strong>Kat&rsquo;s Window on Thailand</strong>, interpreting Thai culture for the readership of Asia&rsquo;s second-largest English newspaper. Simultaneously volunteered with the Mon Culture and Literature Survival Group, developing literacy materials for refugees in Sangkhlaburi. Also worked as a digital content author for katswindow.net.</div>
       </div>
 
       <div class="stop rev">
@@ -191,7 +179,7 @@ footer .mono{color:rgba(243,237,225,.78)}
         <ul class="wins">
           <li><strong>12% increase</strong> in senior school attainment within one year through targeted intervention</li>
           <li><strong>300+ admissions interviews</strong> per year; built the assessment framework (NGRT, writing, listening, standardized packet)</li>
-          <li>Created the college's <strong>Rolling Professional Development</strong> plan</li>
+          <li>Created the college&rsquo;s <strong>Rolling Professional Development</strong> plan</li>
           <li>Managed and mentored <strong>16 staff</strong> (12 TAs, 4 teachers)</li>
           <li>Founded Language Perfect competitive team: <strong>3rd in the world</strong>, 1st place individual (2014)</li>
           <li>Represented EAL on the <strong>Curriculum Committee</strong>; aligned EAL vertically and horizontally</li>
@@ -223,7 +211,7 @@ footer .mono{color:rgba(243,237,225,.78)}
         <div class="mono yr">2018 &mdash; 2027</div>
         <h3>Senior Lecturer &middot; DEI Faculty Chair &middot; Center for Student Belonging Facilitator</h3>
         <div class="pl">NYU Shanghai &middot; China</div>
-        <div class="ctx">China's first Sino-US research university. Third degree-granting campus of NYU Global Network. ~2,000 students from 70+ countries. LEED Gold New Bund Campus.</div>
+        <div class="ctx">China&rsquo;s first Sino-US research university. Third degree-granting campus of NYU Global Network. ~2,000 students from 70+ countries. LEED Gold New Bund Campus.</div>
         <div class="desc">Progressed through Adjunct Faculty, Lecturer, and Senior Lecturer. Designed four interdisciplinary first-year courses, led institutional DEI and belonging work, mentored underrepresented students, and built the curriculum infrastructure for a program serving two thousand students from seventy countries.</div>
         <ul class="wins">
           <li>Designed <strong>4 innovative courses</strong>: Future Focused, (Un)Sustainability, Systems Thinking, History of Rock and Roll</li>
@@ -247,7 +235,7 @@ footer .mono{color:rgba(243,237,225,.78)}
 <div class="qstrip">
   <div class="lamp4"></div>
   <div class="wrap">
-    <blockquote>Everything I have built since is an argument that Caroline Hopkins was right about more children than me.</blockquote>
+    <blockquote>The most important aspect of my work is whom I teach, not what I teach.</blockquote>
   </div>
 </div>
 
