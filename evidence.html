@@ -31,6 +31,7 @@ a{color:inherit}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(226,96,27,.55);animation:ping 3.4s ease-out infinite}
 @keyframes ping{0%{box-shadow:0 0 0 0 rgba(226,96,27,.5)}70%{box-shadow:0 0 0 11px rgba(226,96,27,0)}100%{box-shadow:0 0 0 0 rgba(226,96,27,0)}}
 @media(max-width:780px){.rail nav{display:none}}
+.burger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px}.burger span{display:block;width:22px;height:2px;background:var(--ink);transition:transform .2s,opacity .2s}.burger.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}.burger.active span:nth-child(2){opacity:0}.burger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}.mob-nav{display:none;position:absolute;top:54px;left:0;right:0;background:rgba(220,208,182,.98);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(23,19,15,.16);flex-direction:column;padding:16px clamp(20px,5vw,64px) 24px;gap:14px;z-index:39}.mob-nav a{text-decoration:none;color:#372E25;font-size:14px;padding:8px 0;border-bottom:1px solid rgba(23,19,15,.1)}.mob-nav a:hover{color:var(--amber-text)}.mob-nav.open{display:flex}@media(max-width:780px){.burger{display:flex}}
 .pg{padding:clamp(64px,10vw,120px) 0 clamp(40px,5vw,64px)}
 .pg h1{margin:16px 0 0;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(42px,8vw,96px);letter-spacing:-.04em;line-height:.92}
 .pg .sub{margin-top:22px;max-width:56ch;font-size:clamp(18px,2vw,22px);line-height:1.5;color:var(--ink-soft)}
@@ -84,8 +85,10 @@ footer .mono{color:rgba(243,237,225,.78)}
       <a href="index.html#credentials">Credentials</a>
       <a href="index.html#contact">Contact</a>
     </nav>
+    <button class="burger" aria-label="Menu" onclick="document.querySelector('.mob-nav').classList.toggle('open');this.classList.toggle('active')"><span></span><span></span><span></span></button>
     <span class="mono tag"><span class="dot"></span>Open July 2027</span>
   </div>
+  <nav class="mob-nav mono"><a href="index.html">Home</a><a href="practice.html">Practice</a> <a href="marks.html">Marks</a> <a href="evidence.html">Evidence</a> <a href="index.html#credentials">Credentials</a> <a href="index.html#contact">Contact</a></nav>
 </header>
 
 <section class="pg">
@@ -216,6 +219,7 @@ footer .mono{color:rgba(243,237,225,.78)}
     entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
   },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
   document.querySelectorAll('.rev').forEach(function(el){io.observe(el)});
+  document.querySelectorAll('.mob-nav a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('.mob-nav').classList.remove('open');document.querySelector('.burger').classList.remove('active')})});
 })();
 </script>
 </body>
