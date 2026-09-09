@@ -31,7 +31,6 @@ a{color:inherit}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(226,96,27,.55);animation:ping 3.4s ease-out infinite}
 @keyframes ping{0%{box-shadow:0 0 0 0 rgba(226,96,27,.5)}70%{box-shadow:0 0 0 11px rgba(226,96,27,0)}100%{box-shadow:0 0 0 0 rgba(226,96,27,0)}}
 @media(max-width:780px){.rail nav{display:none}}
-.burger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px}.burger span{display:block;width:22px;height:2px;background:var(--ink);transition:transform .2s,opacity .2s}.burger.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}.burger.active span:nth-child(2){opacity:0}.burger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}.mob-nav{display:none;position:absolute;top:54px;left:0;right:0;background:rgba(220,208,182,.98);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(23,19,15,.16);flex-direction:column;padding:16px clamp(20px,5vw,64px) 24px;gap:14px;z-index:39}.mob-nav a{text-decoration:none;color:#372E25;font-size:14px;padding:8px 0;border-bottom:1px solid rgba(23,19,15,.1)}.mob-nav a:hover{color:var(--amber-text)}.mob-nav.open{display:flex}@media(max-width:780px){.burger{display:flex}}
 .pg{padding:clamp(64px,10vw,120px) 0 clamp(40px,5vw,64px)}
 .pg h1{margin:16px 0 0;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(42px,8vw,96px);letter-spacing:-.04em;line-height:.92}
 .pg .sub{margin-top:22px;max-width:56ch;font-size:clamp(18px,2vw,22px);line-height:1.5;color:var(--ink-soft)}
@@ -51,8 +50,10 @@ section{padding:clamp(56px,8vw,100px) 0}
 .samp h3{margin:0 0 10px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:clamp(18px,2.2vw,22px);letter-spacing:-.02em;line-height:1.2}
 .samp p{margin:0 0 14px;font-size:16px;line-height:1.56;color:var(--ink-soft)}
 .samp p:last-child{margin-bottom:0}
-.samp .link{display:inline-flex;align-items:center;gap:6px;color:var(--amber-text);font-weight:600;font-size:15px;text-decoration:underline;text-underline-offset:3px}
-.samp .link:hover{color:var(--ink)}
+.samp .excerpt{margin:12px 0 14px;padding:12px 16px;border-left:3px solid var(--amber);background:var(--bone);font-style:italic;font-size:15px;line-height:1.5;color:var(--ink-soft)}
+.samp .excerpt b{color:var(--ink);font-weight:600;font-style:normal}
+.samp .detail{font-size:14.5px;color:var(--ink-soft);line-height:1.5}
+.samp .detail strong{color:var(--ink)}
 .note-box{margin-top:clamp(34px,5vw,56px);padding:clamp(24px,3vw,36px);border:1.5px solid rgba(23,19,15,.22);background:var(--bone);max-width:56ch}
 .note-box p{margin:0;font-size:15.5px;line-height:1.55;color:var(--ink-soft)}
 .note-box strong{color:var(--ink)}
@@ -85,17 +86,15 @@ footer .mono{color:rgba(243,237,225,.78)}
       <a href="index.html#credentials">Credentials</a>
       <a href="index.html#contact">Contact</a>
     </nav>
-    <button class="burger" aria-label="Menu" onclick="document.querySelector('.mob-nav').classList.toggle('open');this.classList.toggle('active')"><span></span><span></span><span></span></button>
     <span class="mono tag"><span class="dot"></span>Open July 2027</span>
   </div>
-  <nav class="mob-nav mono"><a href="index.html">Home</a><a href="practice.html">Practice</a> <a href="marks.html">Marks</a> <a href="evidence.html">Evidence</a> <a href="index.html#credentials">Credentials</a> <a href="index.html#contact">Contact</a></nav>
 </header>
 
 <section class="pg">
   <div class="wrap">
     <span class="mono" style="color:var(--ink-soft)">What students actually produce</span>
     <h1>Student Work</h1>
-    <p class="sub">The test of a pedagogy is what it produces. These are real artifacts from over <strong>500 first-year students from 70+ countries</strong> in my EAP courses at NYU Shanghai since 2018: reflective journals, research reports, campaign materials, tracking systems, and peer evaluations.</p>
+    <p class="sub">The test of a pedagogy is what it produces. These are real artifacts from over <strong>500 first-year students from 70+ countries</strong> in my EAP courses at NYU Shanghai since 2018. Each example below describes the assignment, what students do, and what it demonstrates.</p>
   </div>
 </section>
 
@@ -105,32 +104,33 @@ footer .mono{color:rgba(243,237,225,.78)}
   <div class="wrap">
     <div class="sec-head rev"><span class="mono idx">01</span>&ensp;<h2>Reflective practice</h2></div>
     <div class="prose rev">
-      <p>Reflection is the engine of the Students as Partners approach. Students use the DEIP framework (Describe, Evaluate, Interpret, Plan) to analyze their own learning, group dynamics, and community engagement.</p>
+      <p>Reflection is the engine of the Students as Partners approach. Students use the DEIP framework (Describe, Evaluate, Interpret, Plan) to analyze their own learning, group dynamics, and community engagement. These are not afterthoughts: they are assessed, scaffolded, and iterative.</p>
     </div>
     <div class="samples rev">
       <div class="samp">
         <span class="mono cat">Reflective journal</span>
         <h3>Volunteering with autistic children at a charity shop</h3>
-        <p>A student reflects on their experiential learning placement, using the DEIP cycle to connect volunteering with classroom concepts about inclusion and social responsibility. Includes photo evidence.</p>
-        <a class="link" href="https://docs.google.com/document/d/19aDZGZaWNAW-28ULqJyAIspeZrbNBEYEdhrmGiserC0/edit?tab=t.0" target="_blank" rel="noopener">View document &rarr;</a>
+        <p>A first-year student reflects on an experiential learning placement at a Shanghai charity shop serving young adults with autism. Using the four-stage DEIP cycle, the student moves from describing the experience through evaluating their own assumptions, interpreting the encounter through course concepts about inclusion and social responsibility, and planning what they would do differently next time.</p>
+        <div class="excerpt"><b>What it demonstrates:</b> the capacity to connect personal experience with academic frameworks, genuine engagement with disability and inclusion, and evidence of growth across the semester.</div>
+        <p class="detail">Includes photo evidence from the placement. Written as a weekly journal entry in the student's own voice.</p>
       </div>
       <div class="samp">
         <span class="mono cat">Reflective journal framework</span>
-        <h3>Weekly personal learning and academic journal</h3>
-        <p>The structured DEIP writing framework students use each week to reflect on their learning, group work, and self-direction. Shows how reflection is scaffolded, not left to chance.</p>
-        <a class="link" href="https://docs.google.com/document/d/1WjnH6fAAQqM3jpKxLzjEoDs3_NGdTijLc5vRR1zIUyI/edit?tab=t.0" target="_blank" rel="noopener">View document &rarr;</a>
+        <h3>The DEIP writing scaffold</h3>
+        <p>The structured framework students use each week: <strong>Describe</strong> what happened, <strong>Evaluate</strong> what went well or poorly, <strong>Interpret</strong> what it means using course concepts, <strong>Plan</strong> what to change. Every student completes this cycle weekly for their personal learning journal and their academic journal.</p>
+        <div class="excerpt"><b>Why it matters:</b> reflection is not left to chance. Students who have never written reflectively before are given a replicable structure that builds metacognitive habits across the semester.</div>
       </div>
       <div class="samp">
         <span class="mono cat">Active learning</span>
-        <h3>Using academic listening skills at a musical theater festival</h3>
-        <p>A student describes applying active listening and presentation analysis skills from class to a real event: the 4th SHCM International Musical Theater Festival.</p>
-        <a class="link" href="https://docs.google.com/document/d/147cUTEFsszRQBSDXQrE5PhkgoklqjEAJ/edit" target="_blank" rel="noopener">View document &rarr;</a>
+        <h3>Academic listening at the Shanghai Musical Theater Festival</h3>
+        <p>A student applies active listening and presentation analysis skills from class to a real-world event: the 4th SHCM International Musical Theater Festival. The assignment asks students to attend any public event and use the analytical listening framework taught in class to produce a structured response.</p>
+        <div class="excerpt"><b>What it demonstrates:</b> transfer of academic skills beyond the classroom. Students prove they can use analytical frameworks independently, without prompting, in contexts they choose themselves.</div>
       </div>
       <div class="samp">
         <span class="mono cat">Self-directed learning</span>
-        <h3>Self-directed learning with peer and self-evaluation</h3>
-        <p>An assignment where students set their own learning goals, track progress, evaluate their own and their peers' contributions, and plan next steps. SaP in action.</p>
-        <a class="link" href="https://docs.google.com/document/d/1I8KSXhwiY3p8nXMQ2UuRyzCnwvyvccG-rmK1I0Y2vgg/edit?tab=t.0" target="_blank" rel="noopener">View document &rarr;</a>
+        <h3>Student-designed learning goals with peer evaluation</h3>
+        <p>Students set their own learning goals for the semester, track their progress in writing, evaluate their own and their peers' contributions to group projects, and plan their next steps. The instructor reviews but does not set the goals: students own the entire cycle.</p>
+        <div class="excerpt"><b>SaP in action:</b> students hold genuine decision-making power over what they learn and how they measure it. Peer evaluation is not anonymous feedback: it is a structured conversation.</div>
       </div>
     </div>
   </div>
@@ -140,20 +140,20 @@ footer .mono{color:rgba(243,237,225,.78)}
   <div class="wrap">
     <div class="sec-head rev"><span class="mono idx">02</span>&ensp;<h2>Research and communication</h2></div>
     <div class="prose rev">
-      <p>Academic English is not just grammar. It is the ability to find credible sources, synthesize information, take a position, and defend it in front of an audience.</p>
+      <p>Academic English is not grammar drills. It is the ability to find credible sources, synthesize information, take a position, and defend it in front of an audience. Every assignment in these courses builds toward that.</p>
     </div>
     <div class="samples rev">
       <div class="samp">
         <span class="mono cat">Research report</span>
-        <h3>SDG research with data analysis</h3>
-        <p>A student-chosen Sustainable Development Goal topic, researched with primary and secondary sources, incorporating data analysis and evidence-based argumentation.</p>
-        <a class="link" href="https://docs.google.com/document/d/1ooXZ9gQccNp3E_NRpk9DUqk9BOPlNealmTputmdx8Zc/edit?tab=t.0" target="_blank" rel="noopener">View document &rarr;</a>
+        <h3>SDG research with primary and secondary sources</h3>
+        <p>Each student chooses a Sustainable Development Goal, conducts original research using primary sources (interviews, surveys, campus data) alongside secondary academic sources, and produces a structured report with data analysis, evidence-based argumentation, and policy recommendations.</p>
+        <div class="excerpt"><b>What it demonstrates:</b> the full research cycle, from question to data to argument to recommendation, in a student's first semester of university. Many students later cite this as the first real research they have done.</div>
       </div>
       <div class="samp">
         <span class="mono cat">Campaign planning</span>
-        <h3>Team planning worksheet for SDG experiential learning campaign</h3>
-        <p>Students negotiate roles, set goals, and plan an on-campus sustainability campaign. Peer review and self-evaluation are built into the planning cycle.</p>
-        <a class="link" href="https://docs.google.com/document/d/1V-xzcfgQQSf-PwsaQploTWUIISym1LZ9-9SO2rdPRBI/edit?tab=t.0" target="_blank" rel="noopener">View document &rarr;</a>
+        <h3>Team-designed SDG experiential learning campaign</h3>
+        <p>Student teams negotiate roles, set campaign goals, plan logistics for an on-campus sustainability campaign, and run the event. The planning worksheet captures the negotiation process: who does what, why, and what happens when someone does not deliver. Peer review and self-evaluation are built into every stage.</p>
+        <div class="excerpt"><b>What it demonstrates:</b> collaboration under real constraints. Students do not just discuss teamwork in the abstract: they experience friction, resolve it, and document what they learned from the process.</div>
       </div>
     </div>
   </div>
@@ -163,26 +163,26 @@ footer .mono{color:rgba(243,237,225,.78)}
   <div class="wrap">
     <div class="sec-head rev"><span class="mono idx">03</span>&ensp;<h2>Community engagement and leadership</h2></div>
     <div class="prose rev">
-      <p>Learning doesn&rsquo;t stop at the classroom door. These artifacts show students connecting academic skills to community life, cross-cultural events, and institutional leadership.</p>
+      <p>Learning does not stop at the classroom door. These artifacts show students connecting academic skills to community life, cross-cultural events, and institutional leadership.</p>
       <p>Through a decade-long partnership with <a href="https://www.steppingstones.cn/" target="_blank" rel="noopener" style="color:var(--amber-text);font-weight:600;text-decoration:underline;text-underline-offset:3px">Stepping Stones Shanghai</a> (initiated 2015 at Harrow, sustained through 2025 at NYU Shanghai), students volunteer teach English to migrant and underserved children. The (Un)Sustainability course also partners with <strong>Good-hope Bakery of Special Youth</strong>, a public welfare bakery providing supportive employment for young adults with neurodiversity. Both partnerships embed community service directly into assessed coursework, not as an add-on.</p>
     </div>
     <div class="samples rev">
       <div class="samp">
         <span class="mono cat">Service and leadership</span>
-        <h3>LEAD Ambassadors at a tabling event</h3>
-        <p>LEAD mentorship students promoting the &ldquo;No Need For Translation&rdquo; cross-cultural understanding events. Evidence of student leadership, outreach, and community-building.</p>
-        <a class="link" href="https://docs.google.com/document/d/1AcoyC00uPLrFAoJxObqlyK3XlVK7VDxy_KIXOrXrDZQ/edit?tab=t.0" target="_blank" rel="noopener">View document &rarr;</a>
+        <h3>LEAD Ambassadors promoting cross-cultural understanding</h3>
+        <p>LEAD mentorship students designed and ran a tabling event for the &ldquo;No Need For Translation&rdquo; cross-cultural initiative. The documentation captures event planning, outreach materials created by students, photos of the event, and a reflection on what worked and what they would change.</p>
+        <div class="excerpt"><b>What it demonstrates:</b> student leadership in action. These are first-generation and underrepresented students who arrived at university months earlier, now running public-facing events that shape campus culture.</div>
       </div>
       <div class="samp">
         <span class="mono cat">Participation tracking</span>
-        <h3>Semester-long engagement tracker</h3>
-        <p>A student participation tracking sheet logging on-campus, in-class, and off-campus engagement throughout the semester. Used collaboratively between student and instructor to discuss final participation grades.</p>
-        <a class="link" href="https://docs.google.com/spreadsheets/d/1WsbDU5xhKe4IegYZM4e4LmY1ecfSVUWzXCaCwcwMqJY/edit?gid=840295009#gid=840295009" target="_blank" rel="noopener">View spreadsheet &rarr;</a>
+        <h3>Collaborative semester-long engagement tracker</h3>
+        <p>A shared spreadsheet where each student logs their on-campus, in-class, and off-campus engagement throughout the semester. The tracker is not a surveillance tool: it is used <strong>collaboratively between student and instructor</strong> during one-on-one meetings to discuss participation grades, identify patterns, and set goals.</p>
+        <div class="excerpt"><b>SaP in action:</b> grades are not imposed. They are discussed, with evidence, in a conversation where the student's own record is the starting point. Students who disagree with a participation assessment can point to specific entries.</div>
       </div>
     </div>
 
     <div class="note-box rev">
-      <p><strong>A note on student privacy.</strong> These documents are shared with student knowledge and consent as part of the EAP reappointment portfolio. Some names may be visible. If you have concerns about any document, please contact me at <a href="mailto:kat@katswindow.net" style="color:var(--amber-text)">kat@katswindow.net</a>.</p>
+      <p><strong>A note on student privacy.</strong> Original student documents are shared with student knowledge and consent as part of the EAP reappointment portfolio and are available on request. Some identifying details have been generalized in the descriptions above. If you would like to see full student work samples, please contact me at <a href="mailto:kat@katswindow.net" style="color:var(--amber-text)">kat@katswindow.net</a>.</p>
     </div>
   </div>
 </section>
@@ -219,8 +219,8 @@ footer .mono{color:rgba(243,237,225,.78)}
     entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
   },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
   document.querySelectorAll('.rev').forEach(function(el){io.observe(el)});
-  document.querySelectorAll('.mob-nav a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('.mob-nav').classList.remove('open');document.querySelector('.burger').classList.remove('active')})});
 })();
 </script>
+<script src="menu.js"></script>
 </body>
 </html>
