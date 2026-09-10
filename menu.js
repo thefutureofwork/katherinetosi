@@ -12,7 +12,7 @@
   rail.insertBefore(btn,tag);
   var nav=document.createElement('nav');
   nav.className='mob-nav mono';
-  nav.innerHTML='<a href="index.html">Home</a><a href="practice.html">Practice</a><a href="marks.html">Marks</a><a href="evidence.html">Evidence</a><a href="index.html#credentials">Credentials</a><a href="index.html#contact">Contact</a>';
+  nav.innerHTML='<a href="index.html">Home</a><a href="practice.html">Practice</a><a href="marks.html">Marks</a><a href="evidence.html">Student Work</a><a href="index.html#credentials">Credentials</a><a href="index.html#contact">Contact</a>';
   rail.parentElement.appendChild(nav);
   btn.addEventListener('click',function(){nav.classList.toggle('open');btn.classList.toggle('active')});
   nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');btn.classList.remove('active')})});
