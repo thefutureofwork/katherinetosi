@@ -55,6 +55,9 @@ section{padding:clamp(56px,8vw,100px) 0}
 .samp .detail{font-size:14.5px;color:var(--ink-soft);line-height:1.5}
 .samp .detail strong{color:var(--ink)}
 .samp img{width:100%;height:auto;border:2px solid var(--ink);margin-bottom:14px}
+.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.photo-grid img{width:100%;height:auto;border:2px solid var(--ink);margin:0}
+@media(max-width:600px){.photo-grid{grid-template-columns:1fr}}
 .note-box{margin-top:clamp(34px,5vw,56px);padding:clamp(24px,3vw,36px);border:1.5px solid rgba(23,19,15,.22);background:var(--bone);max-width:56ch}
 .note-box p{margin:0;font-size:15.5px;line-height:1.55;color:var(--ink-soft)}
 .note-box strong{color:var(--ink)}
@@ -169,10 +172,14 @@ footer .mono{color:rgba(243,237,225,.78)}
     </div>
     <div class="samples rev">
       <div class="samp" style="grid-column:1/-1">
-        <span class="mono cat">SDG Campaign &middot; November 30, 2021</span>
+        <span class="mono cat">SDG Campaign &middot; November 2021</span>
         <h3><a href="https://www.preparedfoods.com/articles/127294-zrou-plant-based-food-product-line" target="_blank" rel="noopener" style="color:var(--amber-text);text-decoration:underline;text-underline-offset:3px">ZROU</a> plant-based food campaign: a student project that changed campus dining</h3>
         <img src="zrou-sdg-campaign.jpg" alt="Two EAP 100 students running a plant-based food tabling event at NYU Shanghai with ZROU food samples, ingredient diagrams, recipe posters, and badges" />
-        <p>As part of their required experiential community outreach, students ran an on-campus SDG campaign introducing plant-based vegan and halal food from <strong><a href="https://www.preparedfoods.com/articles/127294-zrou-plant-based-food-product-line" target="_blank" rel="noopener" style="color:var(--amber-text);font-weight:600;text-decoration:underline;text-underline-offset:3px">ZROU</a></strong>, a Shanghai-based company. The student team designed the entire event: a tabling station with food samples, hand-drawn ingredient diagrams, recipe posters, badges, wristbands, and a laptop presentation explaining the environmental impact of plant-based diets.</p>
+        <div class="photo-grid">
+          <img src="zrou-poster.jpg" alt="Student-designed poster board reading Try Vegetarian Sustainable Today, covered in SDG infographics, climate action arguments, carbon footprint comparisons, QR codes, and dozens of student and faculty signatures" />
+          <img src="zrou-canteen.jpg" alt="The ZROU stall operator in the NYU Shanghai cafeteria, smiling behind the serving counter in an Original Healthy Sides shirt: the permanent result of the student campaign" />
+        </div>
+        <p>As part of their required experiential community outreach, students ran an on-campus SDG campaign introducing plant-based vegan and halal food from <strong><a href="https://www.preparedfoods.com/articles/127294-zrou-plant-based-food-product-line" target="_blank" rel="noopener" style="color:var(--amber-text);font-weight:600;text-decoration:underline;text-underline-offset:3px">ZROU</a></strong>, a Shanghai-based company. The student team designed the entire event: a tabling station with food samples, hand-drawn ingredient diagrams, recipe posters, badges, wristbands, and a laptop presentation explaining the environmental impact of plant-based diets. A second team created a large-format poster board combining SDG infographics, carbon footprint data, animal welfare arguments, and a pledge wall that collected dozens of signatures from students and faculty.</p>
         <p>The campaign had a lasting, measurable outcome: <strong>ZROU subsequently opened a permanent stall in the NYU Shanghai cafeteria</strong>, which remains the only guaranteed place on campus to get vegan and vegetarian meals. A first-semester student project that changed what a university eats.</p>
         <div class="excerpt"><b>What it demonstrates:</b> the full arc from classroom to campus change. Students did not just learn about SDG 12 (Responsible Consumption and Production): they persuaded a company to partner with the university, ran a public event, and created infrastructure that outlasted the course. This is experiential learning with a permanent footprint.</div>
       </div>
