@@ -61,6 +61,13 @@ section{padding:clamp(56px,8vw,100px) 0}
 .note-box{margin-top:clamp(34px,5vw,56px);padding:clamp(24px,3vw,36px);border:1.5px solid rgba(23,19,15,.22);background:var(--bone);max-width:56ch}
 .note-box p{margin:0;font-size:15.5px;line-height:1.55;color:var(--ink-soft)}
 .note-box strong{color:var(--ink)}
+.eval-data{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:rgba(23,19,15,.22);border:1px solid rgba(23,19,15,.22);margin-top:clamp(34px,5vw,56px)}
+@media(max-width:820px){.eval-data{grid-template-columns:1fr}}
+.ed{background:var(--kraft);padding:clamp(22px,3vw,34px)}
+.ed:hover{background:var(--bone)}
+.ed h3{margin:0 0 8px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:clamp(17px,1.8vw,20px);letter-spacing:-.015em;line-height:1.2}
+.ed .score{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(28px,3.6vw,40px);letter-spacing:-.04em;line-height:1;color:var(--amber-text);margin-bottom:6px}
+.ed p{margin:0;font-size:15px;line-height:1.5;color:var(--ink-soft)}
 .back{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink-soft);transition:color .18s;margin-top:clamp(40px,5vw,64px)}
 .back:hover{color:var(--amber-text)}
 .back svg{width:18px;height:18px}
@@ -196,7 +203,33 @@ footer .mono{color:rgba(243,237,225,.78)}
         <div class="excerpt"><b>SaP in action:</b> grades are not imposed. They are discussed, with evidence, in a conversation where the student's own record is the starting point. Students who disagree with a participation assessment can point to specific entries.</div>
       </div>
     </div>
+  </div>
+</section>
 
+<section>
+  <div class="wrap">
+    <div class="sec-head rev"><span class="mono idx">04</span>&ensp;<h2>Course evaluation data</h2></div>
+    <div class="prose rev">
+      <p>End-of-semester student feedback for <strong>EAP 101, Spring 2025</strong> (two sections). These are institutional course evaluations administered by NYU Shanghai, not self-reported data.</p>
+    </div>
+    <div class="eval-data rev">
+      <div class="ed"><div class="score">4.91 / 5</div><h3>Integration of diverse perspectives</h3><p>91% rated the course &ldquo;Very Integrated&rdquo; in one section; 89% in the other. Mean scores of 4.91 and 4.89.</p></div>
+      <div class="ed"><div class="score">4.78 / 5</div><h3>Overall instructor rating</h3><p>Overall evaluations ranged from 4.55 to 4.78, with most students rating the instructor &ldquo;Excellent.&rdquo;</p></div>
+      <div class="ed"><div class="score">4.73 / 5</div><h3>Course goals and clarity</h3><p>82% rated goals &ldquo;Very Clear&rdquo; in one section; 78% in the other. Mean scores of 4.73 and 4.78.</p></div>
+      <div class="ed"><div class="score">4.55 / 5</div><h3>Effectiveness of assignments</h3><p>64% rated assignments &ldquo;Very Effective&rdquo; in one section; 56% in the other. Mean scores of 4.55 and 4.44.</p></div>
+      <div class="ed"><div class="score">82%</div><h3>Feedback rated &ldquo;Very Helpful&rdquo;</h3><p>78% to 82% of students across both sections rated instructor feedback as Very Helpful.</p></div>
+      <div class="ed"><div class="score">78%</div><h3>Class rated &ldquo;Very Inclusive&rdquo;</h3><p>73% to 78% of students rated the class environment as Very Inclusive.</p></div>
+      <div class="ed"><div class="score">4.64 / 5</div><h3>Overall course evaluation</h3><p>64% rated the course &ldquo;Excellent&rdquo; in one section; 56% in the other. Mean scores of 4.64 and 4.56.</p></div>
+      <div class="ed"><div class="score">4.67 / 5</div><h3>Communication of expectations</h3><p>64% to 67% rated communication as &ldquo;Very Clearly.&rdquo; Mean scores of 4.45 and 4.67.</p></div>
+    </div>
+    <div class="prose rev" style="margin-top:clamp(28px,4vw,44px)">
+      <p><strong>Student highlights:</strong> development of critical thinking, research, and presentation skills; integration of systems thinking tools into real-life situations; hands-on learning through interviews and group discussions; emphasis on sustainability and SDGs connecting academic learning with real-world issues; encouragement to explore personal interests and cultural perspectives within academic inquiry.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <div class="note-box rev">
       <p><strong>A note on student privacy.</strong> Original student documents are shared with student knowledge and consent as part of the EAP reappointment portfolio and are available on request. Some identifying details have been generalized in the descriptions above. If you would like to see full student work samples, please contact me at <a href="mailto:kat@katswindow.net" style="color:var(--amber-text)">kat@katswindow.net</a>.</p>
     </div>
