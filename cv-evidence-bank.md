@@ -1,5 +1,18 @@
 # CV Evidence Bank
 
+## MCN Civic Learning Council
+
+**Role:** Associate Member
+
+[MCN Civic Learning Council](https://www.mcnpartners.org/civic-learning-council)
+
+Associate member of the Millennium Campus Network’s Civic Learning Council, a global community of higher education leaders advancing civic engagement, student leadership, and social impact.
+
+**CV-ready version:**
+> Associate Member, MCN Civic Learning Council. Participate in a global community of higher education leaders advancing civic engagement, student leadership, and social impact.
+
+**Leadership signal:** Higher education civic learning, student leadership, social impact, global collaboration, and university-community engagement.
+
 ## Mon Literacy and Culture Survival Group · Sangkhlaburi, Thailand
 
 **Evidence theme:** Cultural preservation, digital literacy infrastructure, refugee-community engagement
