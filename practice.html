@@ -208,6 +208,7 @@
     .sap-item .k {
       color: var(--amber-text);
       flex: 0 0 18px;
+      flex-shrink: 0;
       font-family: "Bricolage Grotesque", sans-serif;
       font-weight: 700;
     }
@@ -451,6 +452,25 @@
       .ps-stats { grid-template-columns: 1fr; }
       .footer-end { flex-direction: column; }
       .rail nav { justify-content: flex-start; }
+    }
+
+    @media (max-width: 460px) {
+      .rail nav {
+        gap: 10px;
+      }
+      .rail nav a {
+        font-size: 10.5px;
+        letter-spacing: .09em;
+      }
+      .pg .sub {
+        font-size: 17px;
+      }
+      .sap-item {
+        gap: 10px;
+      }
+      .sap-item .v {
+        font-size: 15px;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
