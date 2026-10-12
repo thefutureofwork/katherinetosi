@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  .bottom-photo-section {
+  padding: clamp(24px, 5vw, 56px) 0 0;
+}
+
+.bottom-photo {
+  display: block;
+  width: min(100%, 720px);
+  margin: 0 auto;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(23, 19, 15, 0.12);
+  object-fit: cover;
+}
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Student Work &middot; Katherine Tosi</title>
@@ -122,6 +134,11 @@ Use this:
     <p>Students become authors of their learning, not just participants in it.</p>
   </div>
 </div>
+      <section class="bottom-photo-section">
+  <div class="wrap">
+    <img src="photo.JPG" alt="Katherine Tosi" class="bottom-photo" />
+  </div>
+</section>
 ```
 
 This reads more like Katherine Tosi because it:
