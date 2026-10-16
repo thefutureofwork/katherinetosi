@@ -106,6 +106,7 @@
       text-transform: uppercase;
     }
     .rail nav a:hover { text-decoration: underline; }
+    .rail nav a[aria-current] { color: var(--amber-text); text-decoration: underline; text-underline-offset: 4px; }
 
     .pg {
       padding: clamp(64px, 10vw, 120px) 0 clamp(40px, 5vw, 64px);
@@ -142,6 +143,7 @@
       line-height: 1.5;
       color: var(--ink-soft);
     }
+    .pg .sub strong { color: var(--ink); font-weight: 600; }
 
     section {
       padding: clamp(56px, 8vw, 100px) 0;
@@ -228,6 +230,11 @@
       flex-wrap: wrap;
       gap: clamp(24px, 4vw, 48px);
       align-items: baseline;
+    }
+    .eval-label {
+      flex: 0 0 100%;
+      color: var(--ink-soft);
+      margin-bottom: calc(-1 * clamp(8px, 2vw, 26px));
     }
     .eval-stat {
       flex: 1;
@@ -490,9 +497,10 @@
     <header class="rail">
       <div class="wrap rail-inner">
         <a class="who" href="index.html">Katherine Tosi</a>
-        <nav class="mono">
-          <a href="practice.html">Practice</a>
+        <nav class="mono" aria-label="Primary">
+          <a href="practice.html" aria-current="page">Practice</a>
           <a href="marks.html">Marks</a>
+          <a href="evidence.html">Student Work</a>
           <a href="gallery.html">Gallery</a>
           <a href="index.html#credentials">Credentials</a>
           <a href="index.html#contact">Contact</a>
@@ -506,7 +514,7 @@
         <div class="pg-top">
           <div>
             <h1>The Practice</h1>
-            <p class="sub">I teach English for Academic Purposes at NYU Shanghai, where I have taught over 500 first-year students from 70+ countries since 2018. I'm now training for headship around one question: how do schools govern generative AI without fear, blanket bans, or leaving anyone behind?</p>
+            <p class="sub">I teach English for Academic Purposes at NYU Shanghai, where I have taught over 500 first-year students from 70+ countries since 2018. Alongside teaching, I am completing the <strong>NPQH at UCL Institute of Education</strong>, leading a project on AI and academic integrity built with teachers and students, not handed down to them.</p>
           </div>
           <img class="pg-photo" src="photo.JPG" alt="Katherine Tosi" />
         </div>
@@ -585,7 +593,7 @@
 
     <div class="eval-strip">
       <div class="wrap">
-        <span class="mono" style="color:var(--ink-soft);display:block;margin-bottom:clamp(14px,2vw,22px)">Spring 2025 course evaluations &middot; EAP 101</span>
+        <span class="mono eval-label">Spring 2025 course evaluations &middot; EAP 101</span>
         <div class="eval-stat"><div class="ev-n">4.91</div><div class="ev-l">integration of diverse perspectives (out of 5)</div></div>
         <div class="eval-stat"><div class="ev-n">4.78</div><div class="ev-l">overall instructor rating</div></div>
         <div class="eval-stat"><div class="ev-n">82%</div><div class="ev-l">rated feedback "Very Helpful"</div></div>
