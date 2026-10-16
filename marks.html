@@ -78,8 +78,9 @@
       .section-label{display:block;font-family:"Sometype Mono",monospace;text-transform:uppercase;letter-spacing:.13em;font-size:.78rem;color:var(--amber-text)}
       .continuums-section h2{font-size:clamp(2rem,4vw,3rem);font-weight:800;letter-spacing:-.04em;line-height:1.05;color:var(--ink);margin:.5rem 0 1.25rem}
       .section-intro{font-size:1.1rem;line-height:1.6;color:var(--soft);max-width:68ch;margin:0 0 2rem}
-      .graphic-container{margin:0;max-width:900px}
-      .responsive-graphic{display:block;width:100%;height:auto;border:3px solid var(--ink);box-shadow:5px 6px 0 rgba(23,19,15,.22)}
+      .graphic-container{margin:0}
+      .graphic-container a{display:block}
+      .responsive-graphic{display:block;width:100%;height:auto;border:3px solid var(--ink);box-shadow:5px 6px 0 rgba(23,19,15,.22);background:#fff}
       .graphic-caption{font-family:"Sometype Mono",monospace;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);margin-top:1rem}
 
       .back{display:inline-block;font-size:.85rem;text-transform:uppercase;letter-spacing:.09em}
@@ -307,26 +308,18 @@
           </div>
         </div>
       </section>
-      <section class="continuums-section">
-        <div class="container">
-          <span class="section-label">Framework</span>
-          <h2>The 7 Continuums of Learner Agency</h2>
-          <p class="section-intro">
-            A structured framework guiding learners across seven key dimensions (Voice, Choice, Engagement, Motivation, Ownership, Purpose, and Self-Efficacy), moving from teacher-centered structure toward student-led learning and meaningful action.
-          </p>
-          <figure class="graphic-container">
-            <img src="7-continuums-learner-agency.png" alt="The 7 Continuums of Learner Agency" class="responsive-graphic" loading="lazy" onerror="this.style.display='none'">
-            <figcaption class="graphic-caption">Content by Kathleen McClaskey and Katherine Tosi</figcaption>
-          </figure>
-        </div>
-      </section>
-      <section class="continuums-section">
+      <section class="continuums-section" id="student-agency">
         <div class="container">
           <span class="section-label">Student agency</span>
           <h2>Student agency in practice</h2>
+          <p class="section-intro">
+            <strong>The 7 Continuums of Learner Agency</strong> guide learners across Voice, Choice, Engagement, Motivation, Ownership, Purpose, and Self-Efficacy, moving from teacher-centered structure toward student-led learning and meaningful action.
+          </p>
           <figure class="graphic-container">
-            <img src="student agency.jpg" alt="Student agency and student leadership in action" class="responsive-graphic" loading="lazy" />
-            <figcaption class="graphic-caption">Students leading, shaping, and acting through agency in community and learning.</figcaption>
+            <a href="student%20agency.jpg" target="_blank" rel="noopener" aria-label="Open the 7 Continuums of Learner Agency at full size">
+              <img src="student%20agency.jpg" alt="The 7 Continuums of Learner Agency: Voice, Choice, Engagement, Motivation, Ownership, Purpose, and Self-Efficacy, each moving from teacher-centered to learner-driven" class="responsive-graphic" loading="lazy" />
+            </a>
+            <figcaption class="graphic-caption">Content by Kathleen McClaskey and Katherine Tosi · Click to enlarge</figcaption>
           </figure>
         </div>
       </section>
