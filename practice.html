@@ -118,6 +118,7 @@
       gap: clamp(28px, 4vw, 48px);
       flex-wrap: wrap;
     }
+    .pg-top > div { flex: 1 1 520px; min-width: 0; }
     .pg-photo {
       width: clamp(160px, 20vw, 240px);
       height: auto;
@@ -147,14 +148,34 @@
       color: var(--ink);
     }
     .pg .builds em { font-style: normal; color: var(--amber-text); }
-    .pg .sub {
-      margin-top: 22px;
-      max-width: 58ch;
-      font-size: clamp(18px, 2vw, 22px);
+    .build-list {
+      margin: 28px 0 0;
+      max-width: 62ch;
+      border-top: 1.5px solid var(--ink);
+    }
+    .build-list > div {
+      display: grid;
+      grid-template-columns: 112px 1fr;
+      gap: 18px;
+      align-items: baseline;
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(23,19,15,.2);
+    }
+    .build-list dt {
+      font-family: "Sometype Mono", monospace;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--amber-text);
+    }
+    .build-list dd {
+      margin: 0;
+      font-size: clamp(17px, 1.7vw, 19px);
       line-height: 1.5;
       color: var(--ink-soft);
     }
-    .pg .sub strong { color: var(--ink); font-weight: 600; }
+    .build-list dd strong { color: var(--ink); font-weight: 600; }
 
     section {
       padding: clamp(56px, 8vw, 100px) 0;
@@ -480,9 +501,7 @@
         font-size: 10.5px;
         letter-spacing: .09em;
       }
-      .pg .sub {
-        font-size: 17px;
-      }
+      .build-list > div { grid-template-columns: 1fr; gap: 4px; }
       .sap-item {
         gap: 10px;
       }
@@ -526,7 +545,12 @@
           <div>
             <h1>The Practice</h1>
             <p class="builds">I build curriculum. I build systems. I build vision. I build <em>policy that connects to the populations it is written for.</em></p>
-            <p class="sub">Right now that policy is generative AI. Through the <strong>NPQH at UCL Institute of Education</strong>, I am working with teachers and students to decide where AI strengthens learning, where it shortcuts it, and how assessment has to change so it still shows what a student can actually do. It is written for the people who live with it: multilingual learners, SEND and neurodivergent students, and the teachers marking their work. Since 2018, that has meant 500+ first-year students from 70+ countries at NYU Shanghai.</p>
+            <dl class="build-list">
+              <div><dt>Curriculum</dt><dd><strong>Four original first-year courses</strong> at NYU Shanghai, taught to 500+ students from 70+ countries since 2018.</dd></div>
+              <div><dt>Systems</dt><dd>An <strong>EAL department built from nothing</strong> at Dulwich College Beijing, and <strong>whole-school student services in twelve months</strong> at Harrow Shanghai.</dd></div>
+              <div><dt>Vision</dt><dd>Co-author of the <strong>EAP strategic vision and five-year plan</strong>, positioning the department as the Center for Academic Inquiry.</dd></div>
+              <div><dt>Policy</dt><dd><strong>AI and academic integrity</strong> through the NPQH at UCL Institute of Education, shaped with the teachers and students who live with it.</dd></div>
+            </dl>
           </div>
           <img class="pg-photo" src="photo.JPG" alt="Katherine Tosi" />
         </div>
