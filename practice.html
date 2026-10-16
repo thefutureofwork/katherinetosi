@@ -148,34 +148,14 @@
       color: var(--ink);
     }
     .pg .builds em { font-style: normal; color: var(--amber-text); }
-    .build-list {
-      margin: 28px 0 0;
-      max-width: 62ch;
-      border-top: 1.5px solid var(--ink);
-    }
-    .build-list > div {
-      display: grid;
-      grid-template-columns: 112px 1fr;
-      gap: 18px;
-      align-items: baseline;
-      padding: 13px 0;
-      border-bottom: 1px solid rgba(23,19,15,.2);
-    }
-    .build-list dt {
-      font-family: "Sometype Mono", monospace;
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--amber-text);
-    }
-    .build-list dd {
-      margin: 0;
-      font-size: clamp(17px, 1.7vw, 19px);
+    .pg .sub {
+      margin-top: 22px;
+      max-width: 58ch;
+      font-size: clamp(18px, 2vw, 22px);
       line-height: 1.5;
       color: var(--ink-soft);
     }
-    .build-list dd strong { color: var(--ink); font-weight: 600; }
+    .pg .sub strong { color: var(--ink); font-weight: 600; }
 
     section {
       padding: clamp(56px, 8vw, 100px) 0;
@@ -501,7 +481,9 @@
         font-size: 10.5px;
         letter-spacing: .09em;
       }
-      .build-list > div { grid-template-columns: 1fr; gap: 4px; }
+      .pg .sub {
+        font-size: 17px;
+      }
       .sap-item {
         gap: 10px;
       }
@@ -545,12 +527,7 @@
           <div>
             <h1>The Practice</h1>
             <p class="builds">I build curriculum. I build systems. I build vision. I build <em>policy that connects to the populations it is written for.</em></p>
-            <dl class="build-list">
-              <div><dt>Curriculum</dt><dd><strong>Four original first-year courses</strong> at NYU Shanghai, taught to 500+ students from 70+ countries since 2018.</dd></div>
-              <div><dt>Systems</dt><dd>An <strong>EAL department built from nothing</strong> at Dulwich College Beijing, and <strong>whole-school student services in twelve months</strong> at Harrow Shanghai.</dd></div>
-              <div><dt>Vision</dt><dd>Co-author of the <strong>EAP strategic vision and five-year plan</strong>, positioning the department as the Center for Academic Inquiry.</dd></div>
-              <div><dt>Policy</dt><dd><strong>AI and academic integrity</strong> through the NPQH at UCL Institute of Education, shaped with the teachers and students who live with it.</dd></div>
-            </dl>
+            <p class="sub">At NYU Shanghai I have designed <strong>four original first-year courses</strong> for 500+ students from 70+ countries since 2018. Before that, I built an <strong>EAL department from nothing</strong> at Dulwich College Beijing and <strong>whole-school student services in twelve months</strong> at Harrow Shanghai. I co-authored the <strong>EAP strategic vision and five-year plan</strong>, and through the NPQH at UCL Institute of Education I am shaping <strong>AI and academic integrity policy</strong> with the teachers and students who will live with it.</p>
           </div>
           <img class="pg-photo" src="photo.JPG" alt="Katherine Tosi" />
         </div>
