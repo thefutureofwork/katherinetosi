@@ -33,6 +33,7 @@
       .eyebrow{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.13em;color:var(--soft)}
       .pg h1{font-size:clamp(2.6rem,6vw,5.4rem);font-weight:800;line-height:.95;letter-spacing:-.05em;margin:.6rem 0 1.2rem}
       .sub{max-width:62ch;font-size:clamp(1.1rem,1.6vw,1.25rem);margin:0;color:var(--soft)}
+      .builder{display:block;max-width:40ch;margin-top:1.2rem;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:clamp(1.25rem,2.4vw,1.65rem);line-height:1.2;letter-spacing:-.025em;color:var(--ink)}
 
       .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:2.75rem;border-top:1.5px solid var(--ink)}
       .stat{padding:1.2rem 1.2rem 0 0}
@@ -55,6 +56,12 @@
       .desc{margin:0}
       .desc+.desc{margin-top:.7rem}
       .desc a{color:var(--amber-text);text-underline-offset:3px}
+
+      /* Mon curriculum PDF card */
+      .pdf-thumb{display:block;max-width:480px;margin-top:1.2rem;border:2px solid var(--ink);background:var(--bone);text-decoration:none;overflow:hidden;transition:transform .15s}
+      .pdf-thumb:hover{transform:translateY(-2px)}
+      .pdf-thumb object{width:100%;height:340px;pointer-events:none;display:block}
+      .pdf-thumb span{display:block;padding:10px 14px;font-family:"Sometype Mono",monospace;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--amber-text);border-top:1px solid var(--line)}
 
       /* Quote band */
       .quote{padding:clamp(4rem,8vw,6rem) 0;background:var(--ink);color:var(--bone);border-top:0}
@@ -100,6 +107,7 @@
         .nav{justify-content:flex-start;gap:.4rem 1rem}
         .frame{padding-left:1.6rem}
         .stop:before{left:calc(-1.6rem - 10px)}
+        .pdf-thumb object{height:240px}
         .foot{flex-direction:column}
       }
     </style>
@@ -124,6 +132,7 @@
           <span class="mono eyebrow">Career timeline</span>
           <h1>Marks on the doorframe</h1>
           <p class="sub">My family built our house by hand, board by board, nail by nail. Growth was measured in pencil marks on a doorframe and the number of doors on the house. This is that character in education: a life of building, learning, and leaving something sturdier behind.</p>
+          <strong class="builder">I grew up building a house by hand. I've been building schools ever since.</strong>
           <div class="stats">
             <div class="stat">
               <div class="n">34</div>
@@ -168,13 +177,15 @@
               <h3>Published Columnist · Curriculum Developer · Volunteer Literacy Teacher</h3>
               <div class="place">The Bangkok Post · Mon Culture &amp; Literature Survival Project · Thailand</div>
               <p class="desc">Wrote the weekly <strong><a href="https://katswindow.net/" target="_blank" rel="noopener">Kat's Window on Thailand</a></strong> column for Asia's second-largest English-language newspaper, developing an educational voice rooted in public writing, community learning, and social literacy.</p>
-              <p class="desc">Volunteered with the <a href="mon-literacy.html">Mon Culture and Literature Survival Project</a> in Sangkhlaburi: brought the refugee camp's first internet line in from Thailand, secured the computers monks used to transcribe palm-leaf manuscripts, and built a needs-based, 36-unit English/Mon curriculum for a stateless refugee community, working alongside the Mon cultural preservationist who built the Mon-script fonts.</p>
+              <p class="desc">Volunteered with the <a href="mon-literacy.html">Mon Culture and Literature Survival Project</a> in Sangkhlaburi, on the Myanmar border: brought the refugee camp's first internet line in from Thailand, secured the computers monks used to transcribe palm-leaf manuscripts, and built a needs-based, <strong>36-unit English/Mon curriculum</strong> covering health, first aid, culture, English language skills, numeracy, daily life, and vocational topics for a stateless refugee community, working alongside the Mon cultural preservationist who built the Mon-script fonts.</p>
+              <a href="mon-literacy.html" class="pdf-thumb"><object data="mon-curriculum.pdf" type="application/pdf" title="Mon English Curriculum Design"><span style="padding:24px;display:block;font:16px Georgia,serif;color:var(--soft);text-transform:none;letter-spacing:0;border:0">36-unit bilingual Mon-English curriculum</span></object><span>See the Mon project and full curriculum &rarr;</span></a>
             </div>
             <div class="stop">
               <div class="mono yr">2003–2006</div>
               <h3>IELTS Instructor · K–12 English Teacher · Teacher Trainer</h3>
               <div class="place">Taylor College, Sydney · ILBC (International Language and Business Centre), Mandalay</div>
               <p class="desc">Completed the MA TESOL at UNSW and taught across all year groups in Myanmar. Built a 60-hour teacher training program with the British Council and contributed to a literacy and language-learning culture that reached beyond one classroom.</p>
+              <p class="desc">Contributed to <em>To Asia With Love</em>, Honorable Mention in the 2005 Independent Book Publishing Awards.</p>
             </div>
             <div class="stop">
               <div class="mono yr">2007–2011</div>
@@ -188,12 +199,15 @@
               <div class="place">Dulwich College Beijing · China</div>
               <p class="desc"><strong>Built the school's professional development infrastructure.</strong> Designed Rolling PD for all 113 teachers: every teacher led one in-house workshop a year and attended at least three others. Line-managed a team of 16 and lifted senior school attainment 12% in one year.</p>
               <p class="desc"><strong>Built the EAL department from scratch.</strong> Before I arrived, there was no department: students were simply pulled out of classes for ad hoc, unstructured instruction. I built the model, staff, curriculum, and evaluation cycle that made language support sustainable and academically rigorous.</p>
+              <p class="desc"><strong>Built admissions and student voice.</strong> Built the admissions assessment framework and conducted 300+ admissions assessments a year, took a student language team to third in the world, and launched the school's competitive debate program as a Debate Fellow at Beihang and a teaching fellow at the International Debate Academy Slovenia (IDAS).</p>
+              <p class="desc"><strong>Taught and organized the school's World's Largest Lesson (September 2015)</strong>, the UNICEF and Global Goals campaign lesson launching the new UN Sustainable Development Goals in 100+ countries. It began a decade of SDG teaching that continued in the (Un)Sustainability course at NYU Shanghai.</p>
             </div>
             <div class="stop">
               <div class="mono yr">2016–2018</div>
               <h3>Director of Student Services, Nursery–Year 13</h3>
               <div class="place">Harrow International School Shanghai · China</div>
               <p class="desc">Built whole-school student services from inception within twelve months, trained faculty in inclusive practice, CLIL, and differentiation, rebuilt admissions around the student experience, and designed systems to support learning equity at a major international school.</p>
+              <p class="desc">Established safeguarding protocols, built a competitive debate program from scratch with World Schools format tournaments, and initiated the Stepping Stones Shanghai partnership in 2016.</p>
             </div>
             <div class="stop">
               <div class="mono yr">2017–Present</div>
